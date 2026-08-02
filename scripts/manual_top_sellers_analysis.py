@@ -1,0 +1,128 @@
+"""
+수동 상위 판매 사이트 분석 가이드
+"""
+import os
+import json
+
+
+def create_manual_analysis_template():
+    """
+    수동 분석 템플릿 생성
+    """
+    template = """# {item} 상위 판매 사이트 수동 분석
+
+## 분석 대상
+- 검색어: {item}
+- 분석 기간: {date}
+- 데이터 출처: 네이버 쇼핑
+
+## 수집 방법
+1. 네이버 쇼핑 접속: https://shopping.naver.com/search?k={item}
+2. 상위 5개 상품 정보 수동 기록
+3. 각 상품별 상세페이지 진입
+
+## 상위 5개 상품 정보
+
+### 1위
+- **브랜드**:
+- **상품명**:
+- **가격**:
+- **리뷰 수**:
+- **평점**:
+- **상품 URL**:
+- **특징**:
+
+### 2위
+- **브랜드**:
+- **상품명**:
+- **가격**:
+- **리뷰 수**:
+- **평점**:
+- **상품 URL**:
+- **특징**:
+
+### 3위
+- **브랜드**:
+- **상품명**:
+- **가격**:
+- **리뷰 수**:
+- **평점**:
+- **상품 URL**:
+- **특징**:
+
+### 4위
+- **브랜드**:
+- **상품명**:
+- **가격**:
+- **리뷰 수**:
+- **평점**:
+- **상품 URL**:
+- **특징**:
+
+### 5위
+- **브랜드**:
+- **상품명**:
+- **가격**:
+- **리뷰 수**:
+- **평점**:
+- **상품 URL**:
+- **특징**:
+
+## 분석 인사이트
+
+### 성공 요인
+1.
+2.
+3.
+
+### 벤치마킹 포인트
+- 상위 사이트의 강점
+- 차별화 요소
+
+### 개선 기회
+- 상위 사이트의 부족한 부분
+- 우리 공략 가능 포인트
+
+## 리뷰 분석
+
+### 긍정 리뷰 TOP 5
+1.
+2.
+3.
+4.
+5.
+
+### 부정 리뷰 TOP 5
+1.
+2.
+3.
+4.
+5.
+
+### 고객 Needs 도출
+- 고객이 원하는 것
+- 고객이 불만인 것
+"""
+
+    from datetime import datetime
+    date_str = datetime.now().strftime("%Y-%m-%d")
+
+    items = ["원피스", "치마", "스커트", "샴푸바"]
+
+    os.makedirs("../analysis", exist_ok=True)
+
+    for item in items:
+        content = template.format(item=item, date=date_str)
+        filename = f"../analysis/manual_top_sellers_{item}.md"
+
+        with open(filename, "w", encoding="utf-8") as f:
+            f.write(content)
+
+        print(f"✅ 템플릿 생성: {filename}")
+
+
+if __name__ == "__main__":
+    print("수동 상위 판매 사이트 분석 템플릿을 생성합니다...\n")
+    create_manual_analysis_template()
+    print("\n✅ 모든 템플릿이 생성되었습니다.")
+    print("\n각 파일을 열고 수동으로 데이터를 입력해주세요.")
