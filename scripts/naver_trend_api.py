@@ -1,5 +1,5 @@
 """
-네이버 검색트렌드 API로 시장조사 데이터 수집
+네이버 검색트렌드 API로 시장조사 데이터 수집 (NAVER API HUB)
 """
 import os
 import json
@@ -12,10 +12,14 @@ load_dotenv()
 NAVER_CLIENT_ID = os.getenv("NAVER_CLIENT_ID", "")
 NAVER_CLIENT_SECRET = os.getenv("NAVER_CLIENT_SECRET", "")
 
+# NAVER API HUB 설정 (2026년 7월 31일 이후 이관)
+# 공식 문서: https://api.ncloud-docs.com/docs/naver-api-hub-search-trend
+API_HUB_ENDPOINT = "https://naverapihub.apigw.ntruss.com/search-trend/v1/search"
 
-def get_search_trend(keywords, start_date, end_date, time_unit="month"):
+
+def get_search_trend(keywords, start_date, end_date, time_unit="month", device="", ages=[], gender=""):
     """
-    네이버 검색트렌드 조회
+    네이버 검색트렌드 조회 (NAVER API HUB)
 
     Args:
         keywords: 검색어 그룹 딕셔너리
@@ -26,14 +30,17 @@ def get_search_trend(keywords, start_date, end_date, time_unit="month"):
         start_date: 시작일 (YYYY-MM-DD)
         end_date: 종료일 (YYYY-MM-DD)
         time_unit: 시간단위 (month, week, day)
+        device: 검색 환경 (pc, mo) - 선택
+        ages: 연령대 리스트 ["1", "2", ...] - 선택
+        gender: 성별 (m, f) - 선택
 
     Returns:
         dict: API 응답
     """
-    url = "https://openapi.naver.com/v1/datalab/search"
+    url = API_HUB_ENDPOINT
     headers = {
-        "X-Naver-Client-Id": NAVER_CLIENT_ID,
-        "X-Naver-Client-Secret": NAVER_CLIENT_SECRET,
+        "X-NCP-APIGW-API-KEY-ID": NAVER_CLIENT_ID,
+        "X-NCP-APIGW-API-KEY": NAVER_CLIENT_SECRET,
         "Content-Type": "application/json"
     }
 
@@ -48,6 +55,14 @@ def get_search_trend(keywords, start_date, end_date, time_unit="month"):
         "timeUnit": time_unit,
         "keywordGroups": keyword_groups
     }
+
+    # 선택적 파라미터 추가
+    if device:
+        data["device"] = device
+    if ages:
+        data["ages"] = ages
+    if gender:
+        data["gender"] = gender
 
     response = requests.post(url, headers=headers, json=data)
     response.raise_for_status()

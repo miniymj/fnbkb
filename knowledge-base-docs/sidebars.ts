@@ -20,6 +20,7 @@ const sidebars: SidebarsConfig = {
       label: '브랜딩',
       items: [
         'branding/intro',
+        'branding/seller-persona',
       ],
     },
   ],
@@ -31,6 +32,7 @@ const sidebars: SidebarsConfig = {
       label: '마케팅',
       items: [
         'marketing/intro',
+        'marketing/methodology',
       ],
     },
   ],
@@ -49,10 +51,41 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
-      label: '데이터 수집 가이드',
+      label: '데이터 수집 · 트렌드 분석',
       items: [
         'research/project-plan',
         'research/data-collection-guide',
+        'research/market-trends-summary',
+        'research/industry-report-2026',
+      ],
+    },
+    {
+      type: 'category',
+      label: '경쟁사 분석 및 차별화',
+      items: [
+        'research/competitive-analysis-differentiation',
+        'research/competitive-analysis-onesie',
+        'research/competitive-analysis-skirt',
+        'research/small-brand-competitors',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'AI 브랜드 분석 · 리뷰 · 채널 검증',
+      items: [
+        'research/ai-brand-analysis-methodology',
+        'research/ai-brand-analysis-results',
+        'research/review-research-cleansing-methodology',
+        'research/competitor-channel-verification',
+      ],
+    },
+    {
+      type: 'category',
+      label: '잠재고객 분석',
+      items: [
+        'research/bodybar-potential-customers',
+        'research/skirt-potential-customers',
+        'research/onesie-potential-customers',
       ],
     },
   ],
