@@ -11,11 +11,11 @@ const config: Config = {
     v4: true,
   },
 
-  url: 'http://localhost:3000',
-  baseUrl: '/',
+  url: 'https://miniymj.github.io',
+  baseUrl: '/fnbkb/',
 
-  organizationName: 'fashion-beauty-seller',
-  projectName: 'knowledge-base',
+  organizationName: 'miniymj',
+  projectName: 'fnbkb',
 
   onBrokenLinks: 'warn',
   markdown: {
@@ -95,19 +95,19 @@ const config: Config = {
           items: [
             {
               label: '스토리텔링',
-              to: '/storytelling/intro',
+              to: '/docs/storytelling/intro',
             },
             {
               label: '브랜딩',
-              to: '/branding/intro',
+              to: '/docs/branding/intro',
             },
             {
               label: '마케팅',
-              to: '/marketing/intro',
+              to: '/docs/marketing/intro',
             },
             {
               label: '시장조사',
-              to: '/research/intro',
+              to: '/docs/research/intro',
             },
           ],
         },
@@ -116,7 +116,7 @@ const config: Config = {
           items: [
             {
               label: '프로젝트 계획',
-              href: 'https://github.com/your-repo',
+              href: 'https://github.com/miniymj/fnbkb',
             },
           ],
         },

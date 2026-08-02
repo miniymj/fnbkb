@@ -9,6 +9,7 @@ const sidebars: SidebarsConfig = {
       items: [
         'storytelling/intro',
         'storytelling/stage-structure',
+        'storytelling/brand-story',
       ],
     },
   ],
