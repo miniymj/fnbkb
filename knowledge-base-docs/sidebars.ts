@@ -22,6 +22,22 @@ const sidebars: SidebarsConfig = {
       items: [
         'branding/intro',
         'branding/seller-persona',
+        'branding/brand-identity-guide',
+        'branding/persona-regulation-worksheet',
+        'branding/time-place-space-passion-worksheet',
+        'branding/skirt-time-place-space-passion-worksheet',
+        'branding/onesie-time-place-space-passion-worksheet',
+        'branding/bodybar-time-place-space-passion-worksheet',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'MD 라인업',
+      items: [
+        'branding/md-lineup-shampoobar',
+        'branding/md-lineup-bodybar',
+        'branding/md-lineup-skirt-onesie',
+        'branding/md-lineup-resort-onesie',
       ],
     },
   ],
@@ -58,6 +74,9 @@ const sidebars: SidebarsConfig = {
         'research/data-collection-guide',
         'research/market-trends-summary',
         'research/industry-report-2026',
+        'research/skirt-related-keywords-analysis',
+        'research/skirt-review-keywords-analysis',
+        'research/shampoo-bar-trending-keywords',
       ],
     },
     {
