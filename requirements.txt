@@ -1,0 +1,7 @@
+# 시장조사 데이터 수집·분석 스크립트 의존성
+requests==2.32.5
+pandas==2.3.3
+openpyxl==3.1.5
+selenium==4.36.0
+beautifulsoup4==4.15.0
+python-dotenv==1.2.1

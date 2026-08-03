@@ -13,7 +13,7 @@ def process_naver_datalab_excel(filepath):
     네이버 데이터랩에서 다운로드한 엑셀 파일 처리
 
     수동 다운로드 방법:
-    1. https://datalab.naver.com/shoppingInsights/sCategory.naver 접속
+    1. https://datalab.naver.com/shoppingInsight/sKeyword.naver 접속
     2. 검색어 입력 및 기간 설정
     3. 엑셀 다운로드 버튼 클릭
 
@@ -48,7 +48,7 @@ def create_manual_collection_guide():
 ## 1. 네이버 데이터랩 - 연관검색어
 
 ### 접속 URL
-https://datalab.naver.com/shoppingInsights/sCategory.naver
+https://datalab.naver.com/keyword/trendSearch.naver
 
 ### 수집 단계
 1. 검색어 입력 (예: 원피스, 치마, 스커트, 샴푸바)

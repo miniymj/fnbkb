@@ -1,0 +1,98 @@
+[
+  {
+    "category": "샴푸바",
+    "title": "샴푸바",
+    "keywords": [
+      "샴푸바",
+      "고체샴푸",
+      "클렌징바"
+    ],
+    "latest_ratio": 17.28866,
+    "max_ratio": 100,
+    "min_ratio": 4.86671,
+    "growth_rate": -39.6455344966436,
+    "peak_period": "2020-06-01",
+    "low_period": "2017-04-01",
+    "data_points": 120
+  },
+  {
+    "category": "바디바",
+    "title": "바디바",
+    "keywords": [
+      "바디바",
+      "바디워시바",
+      "고체바디워시"
+    ],
+    "latest_ratio": 36.23468,
+    "max_ratio": 100,
+    "min_ratio": 33.26885,
+    "growth_rate": -33.14226887568147,
+    "peak_period": "2023-03-01",
+    "low_period": "2018-12-01",
+    "data_points": 120
+  },
+  {
+    "category": "치마",
+    "title": "치마",
+    "keywords": [
+      "치마",
+      "롱치마",
+      "미니치마"
+    ],
+    "latest_ratio": 20.11027,
+    "max_ratio": 100,
+    "min_ratio": 15.93315,
+    "growth_rate": 55.4135142983185,
+    "peak_period": "2017-05-01",
+    "low_period": "2025-01-01",
+    "data_points": 120
+  },
+  {
+    "category": "스커트",
+    "title": "스커트",
+    "keywords": [
+      "스커트",
+      "롱스커트",
+      "플리츠스커트"
+    ],
+    "latest_ratio": 15.38157,
+    "max_ratio": 100,
+    "min_ratio": 10.29143,
+    "growth_rate": -17.834150588345523,
+    "peak_period": "2017-04-01",
+    "low_period": "2026-01-01",
+    "data_points": 120
+  },
+  {
+    "category": "원피스",
+    "title": "원피스",
+    "keywords": [
+      "원피스",
+      "여름원피스",
+      "빅사이즈원피스"
+    ],
+    "latest_ratio": 26.1209,
+    "max_ratio": 100,
+    "min_ratio": 10.95791,
+    "growth_rate": -25.30428199429844,
+    "peak_period": "2020-06-01",
+    "low_period": "2026-02-01",
+    "data_points": 120
+  },
+  {
+    "category": "휴양지원피스",
+    "title": "휴양지원피스",
+    "keywords": [
+      "휴양지원피스",
+      "비치원피스",
+      "리조트원피스"
+    ],
+    "latest_ratio": 16.75347,
+    "max_ratio": 100,
+    "min_ratio": 0.6896,
+    "growth_rate": -48.71542554365261,
+    "peak_period": "2020-01-01",
+    "low_period": "2020-11-01",
+    "data_points": 120
+  }
+]

@@ -4,7 +4,7 @@
 ## 1. 네이버 데이터랩 - 연관검색어
 
 ### 접속 URL
-https://datalab.naver.com/shoppingInsights/sCategory.naver
+https://datalab.naver.com/keyword/trendSearch.naver
 
 ### 수집 단계
 1. 검색어 입력 (예: 원피스, 치마, 스커트, 샴푸바)

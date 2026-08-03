@@ -5,9 +5,11 @@ NAVER API HUB / NAVER 연동 API 엔드포인트 연결 테스트
 import os
 import json
 import requests
+from pathlib import Path
 from dotenv import load_dotenv
 
-load_dotenv()
+# 루트 .env 하나로 통일
+load_dotenv(Path(__file__).resolve().parent.parent / ".env")
 
 CLIENT_ID = os.getenv("NAVER_CLIENT_ID", "")
 CLIENT_SECRET = os.getenv("NAVER_CLIENT_SECRET", "")
