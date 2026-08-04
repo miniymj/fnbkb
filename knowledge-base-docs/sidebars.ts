@@ -96,6 +96,7 @@ const sidebars: SidebarsConfig = {
         'research/ai-brand-analysis-methodology',
         'research/ai-brand-analysis-results',
         'research/review-research-cleansing-methodology',
+        'research/youtube-review-analysis',
         'research/competitor-channel-verification',
       ],
     },
