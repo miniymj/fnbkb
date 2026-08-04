@@ -102,6 +102,13 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
+      label: '비즈니스 모델 캔버스 (BMC)',
+      items: [
+        'research/bodybar-bmc-9blocks',
+      ],
+    },
+    {
+      type: 'category',
       label: '잠재고객 분석',
       items: [
         'research/bodybar-potential-customers',
