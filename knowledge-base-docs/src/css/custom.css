@@ -4,15 +4,81 @@
  * work well for content-centric websites.
  */
 
-/* You can override the default Infima variables here. */
+/* ============================================================
+ * SUIT 폰트 (SIL OFL — 상업적 이용 가능)
+ * 출처: https://sun.fo/suit/ · GitHub: sun-typeface/SUIT
+ * 한글-영문 조화, UI 최적화, woff2 경량(200kb 미만)
+ * ============================================================ */
+
+/* SUIT Variable (단일 파일로 100~900 전 굵기 커버) */
+@font-face {
+  font-family: 'SUIT';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('/fonts/SUIT-Variable.woff2') format('woff2-variations');
+}
+
+/* Static 폴백 (Variable 미지원 환경용) */
+@font-face {
+  font-family: 'SUIT';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('/fonts/SUIT-Light.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'SUIT';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/SUIT-Regular.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'SUIT';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/fonts/SUIT-Medium.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'SUIT';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/fonts/SUIT-SemiBold.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'SUIT';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/SUIT-Bold.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'SUIT';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url('/fonts/SUIT-ExtraBold.woff2') format('woff2');
+}
+
+/* ============================================================
+ * 전역 폰트 적용 — SUIT를 기본 본문/제목 폰트로
+ * ============================================================ */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  /* SUIT를 전체 타이포그래피에 적용 */
+  --ifm-font-family-base: 'SUIT', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
+  --ifm-font-family-monospace: 'SUIT', SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+
+  /* BodyBar 브랜드 컬러 — 친환경·자연·민감피부 (그린 계열 + 포인트 핑크) */
+  --ifm-color-primary: #4a9d5f;
+  --ifm-color-primary-dark: #3f8a52;
+  --ifm-color-primary-darker: #3a8050;
+  --ifm-color-primary-darkest: #2f6a41;
+  --ifm-color-primary-light: #57b06d;
+  --ifm-color-primary-lighter: #5fb675;
+  --ifm-color-primary-lightest: #72c288;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }

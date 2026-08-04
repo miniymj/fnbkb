@@ -1,103 +1,18 @@
 import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
 
 const sidebars: SidebarsConfig = {
-  // 스토리텔링 사이드바
-  storytellingSidebar: [
+  // ============================================================
+  // 🧴 바디바/샴푸바 사이드바 (뷰티 아이템)
+  // ============================================================
+  bodybarSidebar: [
     {
       type: 'category',
-      label: '스토리텔링',
-      items: [
-        'storytelling/intro',
-        'storytelling/stage-structure',
-        'storytelling/brand-story',
-      ],
-    },
-  ],
-
-  // 브랜딩 사이드바
-  brandingSidebar: [
-    {
-      type: 'category',
-      label: '브랜딩',
-      items: [
-        'branding/intro',
-        'branding/seller-persona',
-        'branding/brand-identity-guide',
-        'branding/persona-regulation-worksheet',
-        'branding/time-place-space-passion-worksheet',
-        'branding/skirt-time-place-space-passion-worksheet',
-        'branding/onesie-time-place-space-passion-worksheet',
-        'branding/bodybar-time-place-space-passion-worksheet',
-      ],
-    },
-    {
-      type: 'category',
-      label: 'MD 라인업',
+      label: '🧴 바디바/샴푸바',
+      link: { type: 'doc', id: 'branding/intro' },
       items: [
         'branding/md-lineup-shampoobar',
         'branding/md-lineup-bodybar',
-        'branding/md-lineup-skirt-onesie',
-        'branding/md-lineup-resort-onesie',
-      ],
-    },
-  ],
-
-  // 마케팅 사이드바
-  marketingSidebar: [
-    {
-      type: 'category',
-      label: '마케팅',
-      items: [
-        'marketing/intro',
-        'marketing/methodology',
-      ],
-    },
-  ],
-
-  // 시장조사 사이드바
-  researchSidebar: [
-    {
-      type: 'category',
-      label: '시장조사 개요',
-      items: [
-        'research/intro',
-        'research/methodology',
-        'research/execution-plan',
-        'research/naver-shopping-category',
-      ],
-    },
-    {
-      type: 'category',
-      label: '데이터 수집 · 트렌드 분석',
-      items: [
-        'research/project-plan',
-        'research/data-collection-guide',
-        'research/market-trends-summary',
-        'research/industry-report-2026',
-        'research/skirt-related-keywords-analysis',
-        'research/skirt-review-keywords-analysis',
-        'research/shampoo-bar-trending-keywords',
-      ],
-    },
-    {
-      type: 'category',
-      label: '경쟁사 분석 및 차별화',
-      items: [
-        'research/competitive-analysis-differentiation',
-        'research/competitive-analysis-onesie',
-        'research/competitive-analysis-skirt',
-        'research/small-brand-competitors',
-      ],
-    },
-    {
-      type: 'category',
-      label: 'AI 브랜드 분석 · 리뷰 · 채널 검증',
-      items: [
-        'research/ai-brand-analysis-methodology',
-        'research/ai-brand-analysis-results',
-        'research/review-research-cleansing-methodology',
-        'research/youtube-review-analysis',
-        'research/competitor-channel-verification',
+        'branding/bodybar-time-place-space-passion-worksheet',
       ],
     },
     {
@@ -109,17 +24,139 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
-      label: '잠재고객 분석',
+      label: '시장조사 · 경쟁사 분석',
       items: [
+        'research/bodybar-market-research',
         'research/bodybar-potential-customers',
-        'research/skirt-potential-customers',
-        'research/onesie-potential-customers',
+        'research/competitive-analysis-differentiation',
+        'research/youtube-review-analysis',
       ],
     },
   ],
 
-  // 개발 사이드바
-  developmentSidebar: [
+  // ============================================================
+  // 👗 스커트/원피스 사이드바 (패션 아이템 A)
+  // ============================================================
+  skirtSidebar: [
+    {
+      type: 'category',
+      label: '👗 스커트/원피스',
+      link: { type: 'doc', id: 'branding/intro' },
+      items: [
+        'branding/md-lineup-skirt-onesie',
+        'branding/skirt-time-place-space-passion-worksheet',
+      ],
+    },
+    {
+      type: 'category',
+      label: '비즈니스 모델 캔버스 (BMC)',
+      items: [
+        'research/skirt-bmc-9blocks',
+      ],
+    },
+    {
+      type: 'category',
+      label: '시장조사 · 경쟁사 분석',
+      items: [
+        'research/skirt-market-research',
+        'research/skirt-potential-customers',
+        'research/competitive-analysis-skirt',
+        'research/competitive-analysis-onesie',
+        'research/onesie-potential-customers',
+        'research/skirt-youtube-review-analysis',
+        'research/skirt-related-keywords-analysis',
+        'research/skirt-review-keywords-analysis',
+      ],
+    },
+  ],
+
+  // ============================================================
+  // 🏖️ 휴양지원피스 사이드바 (패션 아이템 B)
+  // ============================================================
+  resortSidebar: [
+    {
+      type: 'category',
+      label: '🏖️ 휴양지원피스',
+      link: { type: 'doc', id: 'branding/intro' },
+      items: [
+        'branding/md-lineup-resort-onesie',
+        'branding/onesie-time-place-space-passion-worksheet',
+      ],
+    },
+    {
+      type: 'category',
+      label: '비즈니스 모델 캔버스 (BMC)',
+      items: [
+        'research/resort-onesie-bmc-9blocks',
+      ],
+    },
+    {
+      type: 'category',
+      label: '시장조사 · 경쟁사 분석',
+      items: [
+        'research/resort-onesie-market-research',
+        'research/resort-onesie-youtube-review-analysis',
+      ],
+    },
+  ],
+
+  // ============================================================
+  // 📚 공통 가이드 사이드바
+  // ============================================================
+  commonSidebar: [
+    {
+      type: 'category',
+      label: '스토리텔링',
+      items: [
+        'storytelling/intro',
+        'storytelling/stage-structure',
+        'storytelling/brand-story',
+      ],
+    },
+    {
+      type: 'category',
+      label: '브랜딩 가이드',
+      items: [
+        'branding/brand-identity-guide',
+        'branding/seller-persona',
+        'branding/persona-regulation-worksheet',
+        'branding/time-place-space-passion-worksheet',
+      ],
+    },
+    {
+      type: 'category',
+      label: '마케팅',
+      items: [
+        'marketing/intro',
+        'marketing/methodology',
+      ],
+    },
+    {
+      type: 'category',
+      label: '시장조사 방법론 · 공통',
+      items: [
+        'research/intro',
+        'research/methodology',
+        'research/execution-plan',
+        'research/project-plan',
+        'research/data-collection-guide',
+        'research/naver-shopping-category',
+        'research/market-trends-summary',
+        'research/industry-report-2026',
+        'research/shampoo-bar-trending-keywords',
+      ],
+    },
+    {
+      type: 'category',
+      label: '경쟁사 공통 분석',
+      items: [
+        'research/small-brand-competitors',
+        'research/competitor-channel-verification',
+        'research/ai-brand-analysis-methodology',
+        'research/ai-brand-analysis-results',
+        'research/review-research-cleansing-methodology',
+      ],
+    },
     {
       type: 'category',
       label: '개발 도구',

@@ -58,27 +58,27 @@ const config: Config = {
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'storytellingSidebar',
+          sidebarId: 'bodybarSidebar',
           position: 'left',
-          label: '🎭 스토리텔링',
+          label: '🧴 바디바/샴푸바',
         },
         {
           type: 'docSidebar',
-          sidebarId: 'brandingSidebar',
+          sidebarId: 'skirtSidebar',
           position: 'left',
-          label: '🌟 브랜딩',
+          label: '👗 스커트/원피스',
         },
         {
           type: 'docSidebar',
-          sidebarId: 'marketingSidebar',
+          sidebarId: 'resortSidebar',
           position: 'left',
-          label: '📈 마케팅',
+          label: '🏖️ 휴양지원피스',
         },
         {
           type: 'docSidebar',
-          sidebarId: 'researchSidebar',
+          sidebarId: 'commonSidebar',
           position: 'left',
-          label: '🔍 시장조사',
+          label: '📚 공통 가이드',
         },
         {
           href: '/',
