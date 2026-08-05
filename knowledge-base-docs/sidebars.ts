@@ -130,6 +130,7 @@ const sidebars: SidebarsConfig = {
       items: [
         'marketing/intro',
         'marketing/methodology',
+        'marketing/launch-playbook',
       ],
     },
     {
@@ -145,6 +146,17 @@ const sidebars: SidebarsConfig = {
         'research/market-trends-summary',
         'research/industry-report-2026',
         'research/shampoo-bar-trending-keywords',
+        'research/price-master',
+        'research/market-reality-assessment',
+      ],
+    },
+    {
+      type: 'category',
+      label: '실행 · 법규 · 재무',
+      items: [
+        'research/compliance-checklist',
+        'research/financial-model',
+        'research/oem-supply-chain',
       ],
     },
     {
@@ -156,6 +168,7 @@ const sidebars: SidebarsConfig = {
         'research/ai-brand-analysis-methodology',
         'research/ai-brand-analysis-results',
         'research/review-research-cleansing-methodology',
+        'research/competitor-verification-checklist',
       ],
     },
     {

@@ -2,6 +2,11 @@
 
 This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
+## 협업 규칙 (병렬 에이전트)
+
+- [CONTRIBUTING.md](CONTRIBUTING.md) 참조 — 병렬 작업 규칙 · 파일 매니페스트 · 파일명 컨벤션 · 빌드 검증
+- 문서 추가 시 반드시 `sidebars.ts`의 해당 사이드바에 등록하고, `CONTRIBUTING.md` 매니페스트에 기록
+
 ## Installation
 
 ```bash
