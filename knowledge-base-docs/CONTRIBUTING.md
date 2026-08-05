@@ -28,6 +28,7 @@
 | `research/oem-supply-chain` | 실행·공급망 | Cline | 🟡 후보 발굴 중 (외부검색 병합 예정) |
 | `research/competitor-verification-checklist` | 실행·검증 | Cline | 🔴 전부 미검증 |
 | `research/market-reality-assessment` | 실행·데이터 | Cline | ✅ 최초 작성 (데이터 규명 포함) |
+| `branding/md-lineup-*` 4건 | 브랜딩·MD | Cline | ✅ Mermaid 다이어그램 적용 (2026-08-05) |
 | `research/bodybar-external-insights` | 시장조사(외부검색) | 외부검색 에이전트 | 🟡 작성 중 |
 | `research/skirt-external-insights` | 시장조사(외부검색) | 외부검색 에이전트 | 🟡 작성 중 |
 | `research/resort-onesie-external-insights` | 시장조사(외부검색) | 외부검색 에이전트 | 🟡 작성 중 |
@@ -52,3 +53,15 @@ npm run build
 
 - onBrokenLinks: warn 설정 — 경고도 확인 후 커밋 권장
 - 링크 추가 시 실제 파일 존재 확인
+
+---
+
+## 5. 다이어그램 규칙 (Mermaid)
+
+문서의 구조·흐름 다이어그램은 **Mermaid**를 사용합니다 (ASCII 박스 다이어그램 금지 — 폰트·너비에 따라 정렬이 깨짐).
+
+- 활성화: `docusaurus.config.ts` → `markdown.mermaid: true` + `themes: ['@docusaurus/theme-mermaid']` (의존성: `@docusaurus/theme-mermaid@3.10.2`)
+- 사용법: ```mermaid 언어 태그로 코드블록 작성 (예: `flowchart LR` / `flowchart TB` / `sequenceDiagram` / `mindmap`)
+- 노드 스타일: `classDef`로 색상 코딩 (Entry=초록 / Core=파랑 / Premium=분홍 / Bundle=주황 / Retention=보라)
+- 적용 사례: `branding/md-lineup-*` 4건의 "MD 라인업 4단계 구조"·"MD 라인업 시각화"
+- **주의**: 다른 에이전트 점유 파일(`*-external-insights`, `bodybar-bmc-9blocks`)의 다이어그램은 담당자 승인 후 수정
