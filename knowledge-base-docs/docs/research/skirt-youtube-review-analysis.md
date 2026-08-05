@@ -99,3 +99,12 @@ NotebookLM 새 노트북 → "소스 추가" → "YouTube" → 아래 링크 업
 - NotebookLM "오디오 개요"로 팟캐스트 요약 생성
 - "브리핑 문서" 자동 생성으로 팀 공유
 - 본 문서의 Step 2 표·한 줄 요약과 교차 검증해 정확도 향상
+
+---
+
+## 연관 문서
+
+- [[youtube-review-analysis](/research/youtube-review-analysis.md)] — 바디바 유튜브 리뷰 공통 반응 분석
+- [[resort-onesie-youtube-review-analysis](/research/resort-onesie-youtube-review-analysis.md)] — 원피스 유튜브 리뷰 공통 반응 분석
+- [[skirt-external-insights](/research/skirt-external-insights.md)] — 치마 외부 인사이트 모음
+- [[skirt-potential-customers](/research/skirt-potential-customers.md)] — 치마 잠재고객 분석

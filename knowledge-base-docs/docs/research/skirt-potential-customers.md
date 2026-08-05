@@ -215,7 +215,7 @@ pie
 
 ---
 
-## 관객 관심사 개요
+## 관심사 개요
 
 ```mermaid
 pie
@@ -308,6 +308,10 @@ pie
 | 가격대 | 26.82% |
 | 구매 채널 | 14.93% |
 
+### 과포화 카테고리 (경쟁 치열)
+
+> 과포화 카테고리 상세는 `competitive-analysis-skirt.md` 참조
+
 ---
 
 ## 채널 및 콘텐츠 참여도
@@ -366,3 +370,13 @@ pie
 - "오피스룩부터 데이트룩까지"
 - "해외 패션 감각의 롱 스커트"
 - "편안함과 스타일을 모두 갖춘 치마"
+
+---
+
+## 연관 문서
+
+- [[bodybar-potential-customers](/research/bodybar-potential-customers.md)] — 바디바 잠재고객 분석
+- [[onesie-potential-customers](/research/onesie-potential-customers.md)] — 원피스 잠재고객 분석
+- [[skirt-market-research](/research/skirt-market-research.md)] — 치마 시장조사 종합 보고서
+- [[skirt-time-place-space-passion-worksheet](/branding/skirt-time-place-space-passion-worksheet.md)] — 치마 TPSP 워크시트
+- [[skirt-bmc-9blocks](/research/skirt-bmc-9blocks.md)] — 치마 BMC (9블록)

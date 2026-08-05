@@ -11,7 +11,7 @@
 
 ---
 
-## 1. 10년 트렌드 분석
+## 1. 시장 규모 및 트렌드 분석
 
 ### 전체 추이
 
@@ -30,7 +30,7 @@
 
 ---
 
-## 2. 잠재고객 분석
+## 2. 잠재고객 및 타겟팅
 
 > 출처: OneInsight 바디바 잠재고객 분석
 
@@ -54,7 +54,13 @@
 
 ---
 
-## 3. 경쟁사 분석
+## 3. 연관검색어 및 리뷰 분석
+
+> 본 문서 범위 외 — 관련 문서 참조: `shampoo-bar-trending-keywords.md` (샴푸바 트렌딩 키워드)
+
+---
+
+## 4. 경쟁사 분석
 
 > 출처: 톤28, 동구밭, 시드물 홈페이지 분석
 
@@ -66,6 +72,10 @@
 | 동구밭 | 브랜드 스토리, 감성 | 중고가 | 기획세트, 사은품 |
 | 시드물 | 성분 중심, 실용 | 중가 | 피부고민별 세트 |
 
+---
+
+## 5. 브랜드 공백 (청정구역)
+
 ### 시장 공백 (청정구역)
 
 | 영역 | 비포화 정도 | 기회 |
@@ -76,7 +86,7 @@
 
 ---
 
-## 4. 실행 전략
+## 6. 실행 전략
 
 ### 제품 전략
 
@@ -105,7 +115,7 @@
 
 ---
 
-## 5. 리스크 및 대응
+## 7. 리스크 및 대응
 
 | 리스크 | 대응 |
 |--------|------|
@@ -115,7 +125,7 @@
 
 ---
 
-## 6. 성공 지표 (KPI)
+## 8. 성공 지표 (KPI)
 
 | 지표 | 목표 |
 |------|------|
@@ -123,6 +133,15 @@
 | 재구매율 | 30% (3개월 기준) |
 | 정기구독 가입자 | 100명 |
 | 리뷰 평점 | 4.5/5.0 |
+
+---
+
+## 연관 문서
+
+- [[bodybar-potential-customers](/research/bodybar-potential-customers.md)] — 바디바 잠재고객 분석
+- [[bodybar-time-place-space-passion-worksheet](/branding/bodybar-time-place-space-passion-worksheet.md)] — 바디바 TPSP 워크시트
+- [[bodybar-bmc-9blocks](/research/bodybar-bmc-9blocks.md)] — 바디바 BMC (9블록)
+- [[shampoo-bar-trending-keywords](/research/shampoo-bar-trending-keywords.md)] — 샴푸바 트렌딩 키워드
 
 ---
 

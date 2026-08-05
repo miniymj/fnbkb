@@ -337,3 +337,12 @@
 7. **정기구독 모델** 런칭 (1개월/2개월 주기)
 8. **B2B 채널 탐색** (호텔/리조트 어메니티)
 9. **고체형 기능성화장품 기준** 확인 후 해외 진출 검토 (대만/일본)
+
+---
+
+## 연관 문서
+
+- [[bodybar-market-research](/research/bodybar-market-research.md)] — 바디바 시장조사 종합 보고서
+- [[bodybar-potential-customers](/research/bodybar-potential-customers.md)] — 바디바 잠재고객 분석
+- [[youtube-review-analysis](/research/youtube-review-analysis.md)] — 바디바 유튜브 리뷰 공통 반응 분석
+- [[competitive-analysis-differentiation](/research/competitive-analysis-differentiation.md)] — 바디바 경쟁사 분석 · 차별화 포인트 · 상품구성 설계

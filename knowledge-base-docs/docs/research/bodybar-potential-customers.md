@@ -215,7 +215,7 @@ pie
 
 ---
 
-## 관객 관심사 개요
+## 관심사 개요
 
 ```mermaid
 pie
@@ -371,3 +371,13 @@ pie
 - "온 가족이 안심하고 사용하는 바디바"
 - "피부 트러블 없이 딥 클렌징"
 - "환경을 생각하는 친환경 바디바"
+
+---
+
+## 연관 문서
+
+- [[skirt-potential-customers](/research/skirt-potential-customers.md)] — 치마 잠재고객 분석
+- [[onesie-potential-customers](/research/onesie-potential-customers.md)] — 원피스 잠재고객 분석
+- [[bodybar-market-research](/research/bodybar-market-research.md)] — 바디바 시장조사 종합 보고서
+- [[bodybar-time-place-space-passion-worksheet](/branding/bodybar-time-place-space-passion-worksheet.md)] — 바디바 TPSP 워크시트
+- [[bodybar-bmc-9blocks](/research/bodybar-bmc-9blocks.md)] — 바디바 BMC (9블록)

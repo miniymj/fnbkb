@@ -1,5 +1,7 @@
 # 경쟁사 분석 · 차별화 포인트 · 상품구성 설계 — 치마(스커트)
 
+> 📄 이 문서는 `competitive-analysis-differentiation.md`(바디바/샴푸바 상세 버전)와 동일한 프레임워크를 적용한 치마(스커트) 압축본입니다.
+
 > 패션·뷰티 특화 디지털 셀러 양성과정 · 5회차 워크북 (치마/스커트 카테고리)
 > 작성 기준: 2026-08-03 — 샴푸바 워크북(`competitive-analysis-differentiation.md`)과 동일 구조
 
@@ -122,3 +124,12 @@
 | ⑤ 예약판매 | □ | (기획) 시즌 신상 얼리버드 10% 할인 | 수요 검증 |
 
 > **MD 라인업 연결**: ① 미끼상품 = 테니스스커트(CTR 4.42% 실구매) · ② 메인상품 = 플리츠·롱스커트(월검색 18,170) · ③ 프리미엄 = 실크·울 니트 스커트 · ④ 세트/번들 = 면접·하객 코디 세트
+
+---
+
+## 연관 문서
+
+- [[skirt-market-research](/research/skirt-market-research.md)] — 치마 시장조사 종합 보고서
+- [[skirt-potential-customers](/research/skirt-potential-customers.md)] — 치마 잠재고객 분석
+- [[skirt-bmc-9blocks](/research/skirt-bmc-9blocks.md)] — 치마 BMC (9블록)
+- [[skirt-time-place-space-passion-worksheet](/branding/skirt-time-place-space-passion-worksheet.md)] — 치마 TPSP 워크시트

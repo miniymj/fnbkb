@@ -111,7 +111,7 @@
 
 ### 강의 커리큘럼과의 연계
 
-- **D (니즈·페르소나트)**: 각 페르소나의 "충족되지 않은 니즈"를 구체화 → 경쟁사와 차별화
+- **D (니즈·페인포인트)**: 각 페르소나의 "충족되지 않은 니즈"를 구체화 → 경쟁사와 차별화
 - **C (행동·소비패턴)**: 각 페르소나의 정보 탐색 방식 → 채널 선택
 - **B (심리·가치관)**: 가치관 기반 브랜드 메시지 설계
 - **A (인구통계)**: 연령/체형 타겟팅
@@ -261,3 +261,12 @@
 7. **라이브 커머스** 첫 회차 기획 (네이버 라이브)
 8. **무신사 입점** 검토 (크리덴셜 확보)
 9. **리타겟팅 광고** A/B 테스트 시작
+
+---
+
+## 연관 문서
+
+- [[skirt-market-research](/research/skirt-market-research.md)] — 치마 시장조사 종합 보고서
+- [[skirt-potential-customers](/research/skirt-potential-customers.md)] — 치마 잠재고객 분석
+- [[skirt-youtube-review-analysis](/research/skirt-youtube-review-analysis.md)] — 치마(스커트) 유튜브 리뷰 공통 반응 분석
+- [[competitive-analysis-skirt](/research/competitive-analysis-skirt.md)] — 치마 경쟁사 분석 · 차별화 포인트 · 상품구성 설계

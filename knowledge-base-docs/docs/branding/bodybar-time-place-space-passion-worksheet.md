@@ -3,6 +3,7 @@
 > PART 2 · 실습 3
 > 작성일: 2026-08-03
 > 제품: 바디바 (온 가족 친환경 바디워시)
+> 시장 규모: **6,213,600명** (바디바(샴푸바) 잠재고객 전체)
 
 ---
 
@@ -22,6 +23,20 @@
 | 📍 **Place** | "이 제품은 **집의 욕실·샤워 공간, 여행 숙소 샤워실**에서 사용된다." |
 | 🏠 **Space** | "**따뜻하고 안심되는, 가족 중심의 친환경적** 분위기의 공간과 어울린다." |
 | ❤️ **Passion Points** | "소비자는 이 제품을 통해 **가족 피부 건강 지키기와 친환경 라이프스타일 실천**을 실현한다." |
+
+---
+
+## 페르소나 기반 장면 (Scene) 분포
+
+> 잠재고객 6,213,600명의 5개 세그먼트 중, **가족 중심 사용과 안전성 우선** 수요가 가장 뚜렷한 세그먼트를 장면으로 형상화.
+
+| 페르소나 | 비중 | 세그먼트 크기 | 장면 |
+|----------|------|-------------|------|
+| **가족 및 생활 단계별 구매자** | 20% | 1,248,322명 | 🎯 장면 1: "가족의 피부, 자연으로 씻기다" / 장면 2: "여행의 필수품" |
+| **건강과 웰빙을 중시하는 소비자** | 34% | 2,119,348명 | 장면 1의 안전한 성분·알레르기 프리 모티프와 직결 |
+| 성별 및 선물 목적 구매자 | 18% | 1,122,931명 | 2차 타겟 |
+| 실용성과 가성비를 중시하는 소비자 | 18% | 1,106,326명 | 2차 타겟 |
+| 친환경 및 가치 소비자 | 10% | 616,673명 | 2차 타겟 |
 
 ---
 
@@ -59,7 +74,7 @@
 > **8월 첫째 주 일요일 오전 10시, 제주도 펜션 샤워실**
 
 가족 여행 온 40세 김지현이 캐리어에서 바디바를 꺼낸다.
-작고compact한 크기, 플라스틱 병 따로 없다.
+작고 컴팩트한 크기, 플라스틱 병 따로 없다.
 거품 망 하나만 있으면 완벽하다.
 
 "여행 갈 때마다 샴푸·바디워시 따로 챙기기 귀찮았는데
@@ -109,12 +124,30 @@
 
 ---
 
+## SNS 채널 전략 참고
+
+> 출처: `bodybar-potential-customers.md` 채널 참여도 데이터
+
+| 채널 | 주요 콘텐츠 | 참여도 | 활용 방안 |
+|------|-----------|--------|-----------|
+| **유튜브** | 아트 튜토리얼, 뷰티 팁 | **2.21x** / 1.99x | "가족 샤워 타임" 룩북, 성분 안정성 인증 리뷰 |
+| **메타** | 패션 트렌드, 가족의 시간 | **2.18x** / 1.53x | "아이 피부에 닿는 것" 감성 콘텐츠 |
+| **틱톡** | 랩, 자연 | **2.16x** / 1.84x | 자연·친환경 숏폼, 거품/사용감 시연 |
+| **TV** | 스트리밍 장치, 어린이 만화 | 2.02x / 1.84x | — (간접 노출) |
+
+---
+
 ## 연관 문서
 
-- [[bodybar-potential-customers](/research/bodybar-potential-customers.md)] — 바디바 잠재고객 분석
+- [[bodybar-potential-customers](/research/bodybar-potential-customers.md)] — 바디바 잠재고객 6,213,600명 분석 (5개 페르소나)
+- [[bodybar-market-research](/research/bodybar-market-research.md)] — 바디바/샴푸바 시장조사 (여름철 6~8월 계절성)
+- [[bodybar-bmc-9blocks](/research/bodybar-bmc-9blocks.md)] — 바디바/샴푸바 BMC 9블록
+- [[bodybar-external-insights](/research/bodybar-external-insights.md)] — 바디바/샴푸바 외부 인사이트
 - [[shampoo-bar-trending-keywords](/research/shampoo-bar-trending-keywords.md)] — 샴푸바 트렌딩 키워드
 - [[market-trends-summary](/research/market-trends-summary.md)] — 시장 트렌드 요약
 - [[time-place-space-passion-worksheet](/branding/time-place-space-passion-worksheet.md)] — 샴푸바 워크시트
+- [[skirt-time-place-space-passion-worksheet](/branding/skirt-time-place-space-passion-worksheet.md)] — 치마(스커트) 워크시트
+- [[onesie-time-place-space-passion-worksheet](/branding/onesie-time-place-space-passion-worksheet.md)] — 원피스 워크시트
 
 ---
 
@@ -126,6 +159,16 @@
 | 2 | 성분 안정성 인증 콘텐츠 (알레르기 테스트) | 안심감 구축 |
 | 3 | 인플루언서 협업: "아이 피부에 닿는 것" | 마마 톡터 타겟 |
 | 4 | 여행 필수품 번들 (바디바+거품망+파우치) | 여행 시즌 매출 증대 |
+
+---
+
+## 캘린더 마케팅 연계
+
+> 출처: `bodybar-market-research.md` (여름철 6~8월 검색량 증가 경향) + `md-lineup-bodybar.md` (여행 시즌 한정판 세트)
+
+| 시즌 | 캠페인 | 핵심 장면 | 타겟 페르소나 | MD 라인업 |
+|------|--------|----------|-------------|-----------|
+| **6~8월** | 여행 시즌 한정판 여행 세트 (얼리버드 20% 할인) | 장면 2: 여행의 필수품 | 가족 및 생활 단계 (20%) | 미니 30g 2,900원 (미끼) / 세트 3개 24,000원 |
 
 ---
 

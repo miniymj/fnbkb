@@ -83,7 +83,7 @@
 웨딩홀 정원에서 찍은 사진 속 지영은:
 - 신랑신부보다 더 돋보이는 것 같으면서도
 - 결코 과하지 않은 적절한 비중
-- 계절感 가득한 봄 색상의 원피스
+- 계절감 가득한 봄 색상의 원피스
 
 이것은 **하객 룩의 정답**을 찾은 사람의 여유다.
 단추 하나, 주름 하나까지 디테일에 살아있는 브랜드에 대한 신뢰.
@@ -193,8 +193,11 @@ SNS에 올라간 오늘의 룩은 100개 좋아요를 돌파한다.
 - [[skirt-market-research](/research/skirt-market-research.md)] — 치마 시장조사 (치마 +26.7% 유일 성장)
 - [[skirt-related-keywords-analysis](/research/skirt-related-keywords-analysis.md)] — 스커트 연관어 트렌드
 - [[skirt-review-keywords-analysis](/research/skirt-review-keywords-analysis.md)] — 치마 리뷰 인기검색어
+- [[skirt-external-insights](/research/skirt-external-insights.md)] — 치마(스커트) 외부 인사이트
+- [[skirt-youtube-review-analysis](/research/skirt-youtube-review-analysis.md)] — 치마(스커트) 유튜브 리뷰 공통 반응 분석
 - [[competitive-analysis-skirt](/research/competitive-analysis-skirt.md)] — 스누디 역설계 + 청정구역 매핑
 - [[skirt-bmc-9blocks](/research/skirt-bmc-9blocks.md)] — 스커트 BMC 9블록
+- [[skirt-persona-regulation-worksheet](/branding/skirt-persona-regulation-worksheet.md)] — 치마 페르소나 규정요소
 - [[market-trends-summary](/research/market-trends-summary.md)] — 시장 트렌드 요약
 - [[time-place-space-passion-worksheet](/branding/time-place-space-passion-worksheet.md)] — 샴푸바 워크시트
 - [[bodybar-time-place-space-passion-worksheet](/branding/bodybar-time-place-space-passion-worksheet.md)] — 바디바 워크시트

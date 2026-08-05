@@ -306,3 +306,12 @@
 ---
 
 > "데이터는 질문을 던지는 도구입니다. 답은 여러분이 직접 써야 합니다."
+
+---
+
+## 연관 문서
+
+- [[bodybar-market-research](/research/bodybar-market-research.md)] — 바디바 시장조사 종합 보고서
+- [[bodybar-potential-customers](/research/bodybar-potential-customers.md)] — 바디바 잠재고객 분석
+- [[bodybar-bmc-9blocks](/research/bodybar-bmc-9blocks.md)] — 바디바 BMC (9블록)
+- [[bodybar-time-place-space-passion-worksheet](/branding/bodybar-time-place-space-passion-worksheet.md)] — 바디바 TPSP 워크시트

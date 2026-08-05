@@ -270,3 +270,12 @@
 7. **무료 사이즈 교환/반품** 정책 도입 검토
 8. **ESG/D&I 스토리텔링** 개발 (바디 포지티브 메시지)
 9. **"개선형 레트로" 캠페인** 기획 및 실행
+
+---
+
+## 연관 문서
+
+- [[resort-onesie-market-research](/research/resort-onesie-market-research.md)] — 원피스 시장조사 종합 보고서
+- [[onesie-potential-customers](/research/onesie-potential-customers.md)] — 원피스 잠재고객 분석
+- [[resort-onesie-youtube-review-analysis](/research/resort-onesie-youtube-review-analysis.md)] — 원피스 유튜브 리뷰 공통 반응 분석
+- [[competitive-analysis-onesie](/research/competitive-analysis-onesie.md)] — 원피스 경쟁사 분석 · 차별화 포인트 · 상품구성 설계

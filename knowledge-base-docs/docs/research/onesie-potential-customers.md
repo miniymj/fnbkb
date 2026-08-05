@@ -10,7 +10,7 @@
 
 원피스 잠재고객은 약 375만 명으로, 주로 **여성 소비자**들이 원피스에 높은 관심을 보이지만 **남성 소비자**들 또한 상당한 비중으로 관련 제품에 흥미를 가지고 있습니다. 이는 원피스 카테고리가 다양한 성별의 소비자들에게 폭넓게 어필할 수 있는 잠재력을 가지고 있음을 시사합니다.
 
-### 주요 내용
+### 주요 통찰
 
 1. **여성 소비자들의 강한 관심**: '여성 원피스 주요 타겟'에서 명확하게 나타남
 2. **남성 소비자들의 참여**: '남성 원피스 관심 및 관련 타겟'을 통해 확인 가능
@@ -19,7 +19,7 @@
 
 ---
 
-## 사용자 세분화
+## 페르소나 세분화
 
 ```mermaid
 pie
@@ -170,7 +170,7 @@ pie
 
 ---
 
-## 관심 분야 분포 (상위 10개)
+## 관심사 분포 (상위 10개)
 
 ```mermaid
 pie
@@ -318,3 +318,13 @@ pie
 - 착용 후기 및 리뷰 콘텐츠 강화 (29.44% 비포화)
 - 코디 및 액세서리 제안 확대 (23.84% 비포화)
 - 소재 및 품질 차별화 (13.77% 비포화)
+
+---
+
+## 연관 문서
+
+- [[bodybar-potential-customers](/research/bodybar-potential-customers.md)] — 바디바 잠재고객 분석
+- [[skirt-potential-customers](/research/skirt-potential-customers.md)] — 치마 잠재고객 분석
+- [[resort-onesie-market-research](/research/resort-onesie-market-research.md)] — 원피스 시장조사 종합 보고서
+- [[onesie-time-place-space-passion-worksheet](/branding/onesie-time-place-space-passion-worksheet.md)] — 원피스 TPSP 워크시트
+- [[resort-onesie-bmc-9blocks](/research/resort-onesie-bmc-9blocks.md)] — 휴양지원피스 BMC (9블록)

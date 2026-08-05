@@ -1,5 +1,7 @@
 # 경쟁사 분석 · 차별화 포인트 · 상품구성 설계 — 원피스
 
+> 📄 이 문서는 `competitive-analysis-differentiation.md`(바디바/샴푸바 상세 버전)와 동일한 프레임워크를 적용한 원피스 압축본입니다.
+
 > 패션·뷰티 특화 디지털 셀러 양성과정 · 5회차 워크북 (원피스 카테고리)
 > 작성 기준: 2026-08-03 — 샴푸바 워크북(`competitive-analysis-differentiation.md`)과 동일 구조
 
@@ -121,3 +123,12 @@
 | ⑤ 예약판매 | ✅ | 와디즈 얼리버드 20% 할인, 목표 200개 | 출시 전 수요 검증 |
 
 > **MD 라인업 연결**: ① 미끼상품 = 비치웨어(래쉬가드 커버업) · ② 메인상품 = 린넨 휴양지원피스(셔링·랩) · ③ 프리미엄 = 실크·자연염색 한정판 · ④ 세트/번들 = 휴양지 룩 세트
+
+---
+
+## 연관 문서
+
+- [[resort-onesie-market-research](/research/resort-onesie-market-research.md)] — 원피스 시장조사 종합 보고서
+- [[onesie-potential-customers](/research/onesie-potential-customers.md)] — 원피스 잠재고객 분석
+- [[resort-onesie-bmc-9blocks](/research/resort-onesie-bmc-9blocks.md)] — 휴양지원피스 BMC (9블록)
+- [[onesie-time-place-space-passion-worksheet](/branding/onesie-time-place-space-passion-worksheet.md)] — 원피스 TPSP 워크시트

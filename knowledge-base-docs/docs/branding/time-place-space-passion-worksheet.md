@@ -1,14 +1,17 @@
-# Time/Place/Space/Passion Points 형상화 워크시트
+# Time/Place/Space/Passion Points 형상화 워크시트 — 샴푸바
 
 > PART 2 · 실습 3
 > 작성일: 2026-08-03
 > 제품: 샴푸바 (청정구역 컨셉)
+> 시장 규모: **6,213,600명** (바디바/샴푸바 잠재고객 전체)
 
 ---
 
 ## 워크시트 개요
 
 앞서 발견한 **"청정구역"** 아이디어를 4개 축(Time/Place/Space/Passion Points)에 맞춰 각각 한 문장씩 기술합니다. 완성된 4문장을 하나의 장면(Scene)으로 묘사하여, GPT 이미지 스토리보드의 핵심 소스로 활용합니다.
+
+> **청정구역 발견**: 바디바/샴푸바 시장에서 성분 선호(47.61% 비포화)·알레르기 여부(46.09% 비포화) 카테고리가 크게 비포화 → 안전한 성분·알레르기 프리 포지셔닝 기회.
 
 ---
 
@@ -23,6 +26,20 @@
 
 ---
 
+## 페르소나 기반 장면 (Scene) 분포
+
+> 잠재고객 6,213,600명의 5개 세그먼트 중, **건강·웰빙과 친환경 가치 소비** 수요가 가장 뚜렷한 세그먼트를 장면으로 형상화.
+
+| 페르소나 | 비중 | 세그먼트 크기 | 장면 |
+|----------|------|-------------|------|
+| **건강과 웰빙을 중시하는 소비자** | 34% | 2,119,348명 | 🎯 장면 1: "청정의 시작, 샴푸 하나에서 시작하는 작은 혁명" |
+| **친환경 및 가치 소비자** | 10% | 616,673명 | 장면 1의 제로 웨이스트·지속가능성 모티프와 직결 |
+| 가족 및 생활 단계별 구매자 | 20% | 1,248,322명 | 2차 타겟 |
+| 성별 및 선물 목적 구매자 | 18% | 1,122,931명 | 2차 타겟 |
+| 실용성과 가성비를 중시하는 소비자 | 18% | 1,106,326명 | 2차 타겟 |
+
+---
+
 ## 완성된 장면 (Scene) 묘사
 
 ### 스토리보드용 장면
@@ -33,7 +50,7 @@
 
 **저녁 8시 30분, 회사에서 돌아온 28세 직장인 민지의 욕실**
 
-욕실 조명은 은은한 웜화이트 ton으로 켜져 있다. 
+욕실 조명은 은은한 웜화이트 톤으로 켜져 있다. 
 욕실 한구석, 세면대 위에는 쓰레기 없는 삶을 상징하듯 **나무 받침대 위에 올려진 샴푸바 하나**가 덩그러니 놓여 있다. 
 포장은 없다. 플라스틱 병도 없다. 오직 순수한 성분이 압축된 직육면체 덩어리뿐.
 
@@ -86,12 +103,31 @@
 
 ---
 
+## SNS 채널 전략 참고
+
+> 출처: `bodybar-potential-customers.md` 채널 참여도 데이터
+
+| 채널 | 주요 콘텐츠 | 참여도 | 활용 방안 |
+|------|-----------|--------|-----------|
+| **유튜브** | 아트 튜토리얼, 뷰티 팁 | **2.21x** / 1.99x | 뷰티·클렌징 사용법 영상, "청정구역" 샤워 루틴 콘텐츠 |
+| **메타** | 패션 트렌드, 뷰티 팁 | **2.18x** / 1.64x | 친환경 라이프스타일 감성 콘텐츠, 성분 안정성 스토리 |
+| **틱톡** | 랩, 자연 | **2.16x** / 1.84x | 자연·친환경 숏폼, 거품/사용감 시연 |
+| **TV** | 스트리밍 장치, 어린이 만화 | 2.02x / 1.84x | — (간접 노출) |
+
+---
+
 ## 연관 문서
 
 - [[brand-identity-guide](/branding/brand-identity-guide.md)] — 브랜드 아이덴티티 구축 가이드
 - [[persona-regulation-worksheet](/branding/persona-regulation-worksheet.md)] — 고객 페르소나 규정요소
 - [[shampoo-bar-trending-keywords](/research/shampoo-bar-trending-keywords.md)] — 샴푸바 트렌딩 키워드
+- [[bodybar-potential-customers](/research/bodybar-potential-customers.md)] — 바디바(샴푸바) 잠재고객 6,213,600명 분석 (5개 페르소나)
+- [[bodybar-market-research](/research/bodybar-market-research.md)] — 바디바/샴푸바 시장조사 (여름철 6~8월 계절성)
+- [[bodybar-bmc-9blocks](/research/bodybar-bmc-9blocks.md)] — 바디바/샴푸바 BMC 9블록
 - [[market-trends-summary](/research/market-trends-summary.md)] — 시장 트렌드 요약
+- [[bodybar-time-place-space-passion-worksheet](/branding/bodybar-time-place-space-passion-worksheet.md)] — 바디바 워크시트
+- [[skirt-time-place-space-passion-worksheet](/branding/skirt-time-place-space-passion-worksheet.md)] — 치마(스커트) 워크시트
+- [[onesie-time-place-space-passion-worksheet](/branding/onesie-time-place-space-passion-worksheet.md)] — 원피스 워크시트
 
 ---
 
@@ -103,6 +139,16 @@
 | 2 | "청정구역" 컨셉 영상 촬영 (15~30초) | 제품 사용 경험 시각화 |
 | 3 | 인플루언서 섭외: "나의 청정구역" 콘텐츠 협업 | 타겟 페르소나 공감형 확장 |
 | 4 | 욕실 인테리어 큐레이션 콘텐츠 연계 | 라이프스타일 매체 노출 |
+
+---
+
+## 캘린더 마케팅 연계
+
+> 출처: `bodybar-market-research.md` (여름철 6~8월 검색량 증가 경향) + `shampoo-bar-trending-keywords.md` (여름 시즌 헤어케어 캠페인)
+
+| 시즌 | 캠페인 | 핵심 장면 | 타겟 페르소나 | MD 라인업 |
+|------|--------|----------|-------------|-----------|
+| **6~8월** | 여름 시즌 헤어케어 캠페인 | 장면: "청정의 시작" | 건강과 웰빙 (34%) | 정품 100g 9,800원 (메인) |
 
 ---
 
