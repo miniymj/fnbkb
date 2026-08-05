@@ -3,6 +3,8 @@
 > **판매 시작 전 반드시 완료해야 하는 준수(Compliance) 체크리스트입니다.**
 > ⚠️ 이 문서는 법률 자문이 아니며, 실행 전 관할 기관(식약처·관할 지자체) 및 전문가 확인이 필요합니다.
 > 작성일: 2026-08-05 | 상태: 🔴 전 항목 미착수
+>
+> **참고**: MD 라인업(`md-lineup-bodybar.md`, `md-lineup-shampoobar.md`), BMC(`bodybar-bmc-9blocks.md`), 경쟁사 분석(`competitive-analysis-differentiation.md`) 등 기존 기획 문서는 **기획 단계 산출물**이므로 원본 보존합니다. 실제 판매 시 §4 기준에 따라 표현 재작성이 필요합니다.
 
 ---
 

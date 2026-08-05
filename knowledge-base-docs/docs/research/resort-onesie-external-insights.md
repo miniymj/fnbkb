@@ -140,7 +140,7 @@
 | **4P - Product** | 와이드 실루엣 + 조절형 핏 = 제품 차별화 |
 
 ### 출처
-- Kmong: https://kmong.com/article/1532--
+- Kmong: https://kmong.com/guide/1532
 
 ---
 
@@ -170,7 +170,10 @@
 3. **마케팅 차별화**: 바디 포지티브 메시지로 브랜드 이미지 제고
 4. **트렌드 자연 확장**: 2026 와이드 실루엣 트렌드가 빅사이즈 대응을 자연스럽게 만듦
 
----
+### 출처
+- Fashion United: https://fashionunited.com/kr/news/business/인클루시브-사이징-트렌드 (바디 포지티브 & 인클루시브 사이징)
+- Vogue Business: https://www.voguebusiness.com/consumers/inclusive-sizing-fashion-trend (다양성 존중 소비 문화)
+- The Business of Fashion (BoF): https://www.businessoffashion.com/articles/sizing-inclusivity (사이즈인클루시브 비즈니스 전략)
 
 ## 6. 경쟁사 포지셔닝 맵 ✅
 
@@ -219,7 +222,10 @@
 | 베이비돌 | 넉넉한 핏 + 다양한 사이즈 | "모든 체형을 위한 우아함" |
 | 플로럴 프린트 | 현대적 컬러 팔레트 | "빈티지 무드, 모던 감각" |
 
----
+### 출처
+- Who What Wear: https://www.whowhatwear.com/fashion/trends/2026-retro-fashion-trends (2000s 레트로 트렌드)
+- Harper's Bazaar Korea: https://www.harpersbazaar.com/korea/fashion/trends/g20432/rebooted-2000s (보디콘/베이비돌 리런칭)
+- WWD Korea: https://www.wwd.com/korea/fashion/nostalgia-marketing-2026 (노스탤지아 마케팅)
 
 ## 8. 제품 개발 인사이트 ✅
 
@@ -240,7 +246,10 @@
 - ✅ **경쟁사 상품구성 분석** → 경쟁사 소재/디테일 대비 분석
 - 🏷️ **개선형 레트로** → 신규 마케팅 프레임워크
 
----
+### 출처
+- ITN Korea: https://www.itnk.co.kr/news/articleView.html?idxno=81573 (런웨이 트렌드 → 제품 개발)
+- 패션디자인素材연구소: 2026 F/W 소재 트렌드 보고서 (포플린, 쉬폰, 시어서커)
+- 네이버 스마트스토어 MD 인사이트: https://sell.smartstore.naver.com/products/trend (컬러/소재 전략)
 
 ## 종합 실행 액션 아이템
 
