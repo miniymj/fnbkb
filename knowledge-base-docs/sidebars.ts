@@ -2,13 +2,77 @@ import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
 
 const sidebars: SidebarsConfig = {
   // ============================================================
+  // 👗 치마(스커트) 사이드바
+  // ============================================================
+  skirtSidebar: [
+    {
+      type: 'category',
+      label: '👗 치마(스커트)',
+      items: [
+        'branding/md-lineup-skirt-onesie',
+        'branding/skirt-time-place-space-passion-worksheet',
+        'branding/skirt-persona-regulation-worksheet',
+      ],
+    },
+    {
+      type: 'category',
+      label: '비즈니스 모델 캔버스 (BMC)',
+      items: [
+        'research/skirt-bmc-9blocks',
+      ],
+    },
+    {
+      type: 'category',
+      label: '시장조사 · 경쟁사 분석',
+      items: [
+        'research/skirt-market-research',
+        'research/skirt-potential-customers',
+        'research/competitive-analysis-skirt',
+        'research/skirt-youtube-review-analysis',
+        'research/skirt-related-keywords-analysis',
+        'research/skirt-review-keywords-analysis',
+      ],
+    },
+  ],
+
+  // ============================================================
+  // 👗 원피스 사이드바 (휴양지원피스 포함)
+  // ============================================================
+  onesieSidebar: [
+    {
+      type: 'category',
+      label: '👗 원피스',
+      items: [
+        'branding/md-lineup-resort-onesie',
+        'branding/onesie-time-place-space-passion-worksheet',
+      ],
+    },
+    {
+      type: 'category',
+      label: '비즈니스 모델 캔버스 (BMC)',
+      items: [
+        'research/resort-onesie-bmc-9blocks',
+      ],
+    },
+    {
+      type: 'category',
+      label: '시장조사 · 경쟁사 분석',
+      items: [
+        'research/competitive-analysis-onesie',
+        'research/onesie-potential-customers',
+        'research/resort-onesie-market-research',
+        'research/resort-onesie-youtube-review-analysis',
+      ],
+    },
+  ],
+
+  // ============================================================
   // 🧴 바디바/샴푸바 사이드바 (뷰티 아이템)
   // ============================================================
   bodybarSidebar: [
     {
       type: 'category',
       label: '🧴 바디바/샴푸바',
-      link: { type: 'doc', id: 'branding/intro' },
       items: [
         'branding/md-lineup-shampoobar',
         'branding/md-lineup-bodybar',
@@ -30,72 +94,6 @@ const sidebars: SidebarsConfig = {
         'research/bodybar-potential-customers',
         'research/competitive-analysis-differentiation',
         'research/youtube-review-analysis',
-      ],
-    },
-  ],
-
-  // ============================================================
-  // 👗 스커트/원피스 사이드바 (패션 아이템 A)
-  // ============================================================
-  skirtSidebar: [
-    {
-      type: 'category',
-      label: '👗 스커트/원피스',
-      link: { type: 'doc', id: 'branding/intro' },
-      items: [
-        'branding/md-lineup-skirt-onesie',
-        'branding/skirt-time-place-space-passion-worksheet',
-      ],
-    },
-    {
-      type: 'category',
-      label: '비즈니스 모델 캔버스 (BMC)',
-      items: [
-        'research/skirt-bmc-9blocks',
-      ],
-    },
-    {
-      type: 'category',
-      label: '시장조사 · 경쟁사 분석',
-      items: [
-        'research/skirt-market-research',
-        'research/skirt-potential-customers',
-        'research/competitive-analysis-skirt',
-        'research/competitive-analysis-onesie',
-        'research/onesie-potential-customers',
-        'research/skirt-youtube-review-analysis',
-        'research/skirt-related-keywords-analysis',
-        'research/skirt-review-keywords-analysis',
-      ],
-    },
-  ],
-
-  // ============================================================
-  // 🏖️ 휴양지원피스 사이드바 (패션 아이템 B)
-  // ============================================================
-  resortSidebar: [
-    {
-      type: 'category',
-      label: '🏖️ 휴양지원피스',
-      link: { type: 'doc', id: 'branding/intro' },
-      items: [
-        'branding/md-lineup-resort-onesie',
-        'branding/onesie-time-place-space-passion-worksheet',
-      ],
-    },
-    {
-      type: 'category',
-      label: '비즈니스 모델 캔버스 (BMC)',
-      items: [
-        'research/resort-onesie-bmc-9blocks',
-      ],
-    },
-    {
-      type: 'category',
-      label: '시장조사 · 경쟁사 분석',
-      items: [
-        'research/resort-onesie-market-research',
-        'research/resort-onesie-youtube-review-analysis',
       ],
     },
   ],

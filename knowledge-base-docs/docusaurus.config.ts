@@ -58,21 +58,21 @@ const config: Config = {
       items: [
         {
           type: 'docSidebar',
+          sidebarId: 'skirtSidebar',
+          position: 'left',
+          label: '👗 치마(스커트)',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'onesieSidebar',
+          position: 'left',
+          label: '👗 원피스',
+        },
+        {
+          type: 'docSidebar',
           sidebarId: 'bodybarSidebar',
           position: 'left',
           label: '🧴 바디바/샴푸바',
-        },
-        {
-          type: 'docSidebar',
-          sidebarId: 'skirtSidebar',
-          position: 'left',
-          label: '👗 스커트/원피스',
-        },
-        {
-          type: 'docSidebar',
-          sidebarId: 'resortSidebar',
-          position: 'left',
-          label: '🏖️ 휴양지원피스',
         },
         {
           type: 'docSidebar',
