@@ -10,6 +10,7 @@ const sidebars: SidebarsConfig = {
       label: '👗 치마(스커트)',
       items: [
         'branding/md-lineup-skirt-onesie',
+        'branding/skirt-brand-color-palette',
         'branding/skirt-time-place-space-passion-worksheet',
         'branding/skirt-persona-regulation-worksheet',
       ],
@@ -46,6 +47,7 @@ const sidebars: SidebarsConfig = {
       items: [
         'branding/md-lineup-resort-onesie',
         'branding/onesie-time-place-space-passion-worksheet',
+        'branding/onesie-brand-color-palette',
       ],
     },
     {
