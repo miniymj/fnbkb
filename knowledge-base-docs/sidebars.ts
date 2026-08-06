@@ -79,6 +79,7 @@ const sidebars: SidebarsConfig = {
         'branding/md-lineup-shampoobar',
         'branding/md-lineup-bodybar',
         'branding/bodybar-time-place-space-passion-worksheet',
+        'branding/bodybar-color-palette',
       ],
     },
     {
