@@ -125,6 +125,7 @@ const sidebars: SidebarsConfig = {
         'branding/brand-identity-guide',
         'branding/moodboard-prompt-guide',
         'branding/highskin-product-ideas',
+        'branding/highskin-picker-quiz',
         'branding/seller-persona',
         'branding/persona-regulation-worksheet',
         'branding/time-place-space-passion-worksheet',
