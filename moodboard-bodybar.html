@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>브랜드 무드보드 — 바디바 (Warm Clean · 따뜻한 정화)</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Noto+Sans+KR:wght@300;400;500&family=Inter:wght@300;400;500&display=swap');
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #F5F0E8;
+      font-family: 'Noto Sans KR', 'Inter', sans-serif;
+      color: #4A4843;
+      padding: 40px;
+    }
+
+    .board-header {
+      text-align: center;
+      padding: 60px 40px 40px;
+    }
+
+    .board-header h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-size: 42px;
+      letter-spacing: 6px;
+      color: #4A4843;
+      margin-bottom: 8px;
+    }
+
+    .board-header .subtitle {
+      font-size: 14px;
+      letter-spacing: 4px;
+      color: #8A9E91;
+      font-weight: 300;
+      margin-bottom: 20px;
+    }
+
+    .board-header .concept {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 18px;
+      font-style: italic;
+      color: #4A4843;
+      opacity: 0.7;
+    }
+
+    /* Color Palette Bar */
+    .color-bar {
+      display: flex;
+      justify-content: center;
+      gap: 0;
+      margin: 30px auto 50px;
+      max-width: 900px;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 20px rgba(74,72,67,0.08);
+    }
+
+    .color-swatch {
+      flex: 1;
+      padding: 20px 8px;
+      text-align: center;
+      font-size: 10px;
+      letter-spacing: 1px;
+      color: #4A4843;
+      font-weight: 400;
+      transition: flex 0.3s ease;
+    }
+
+    .color-swatch:hover { flex: 1.5; }
+
+    .color-swatch .hex {
+      font-family: 'Inter', monospace;
+      font-size: 9px;
+      opacity: 0.7;
+      margin-top: 4px;
+    }
+
+    /* Grid Layout */
+    .moodboard {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: auto;
+      gap: 16px;
+    }
+
+    .section {
+      background: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 1px 12px rgba(74,72,67,0.06);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .section:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 24px rgba(74,72,67,0.12);
+    }
+
+    .section-label {
+      padding: 12px 16px;
+      font-size: 11px;
+      letter-spacing: 3px;
+      font-weight: 500;
+      color: #8A9E91;
+      border-bottom: 1px solid rgba(138,158,145,0.15);
+    }
+
+    .section-label .number {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 20px;
+      color: #4A4843;
+      font-weight: 300;
+      margin-right: 6px;
+      vertical-align: -2px;
+    }
+
+    .section img {
+      width: 100%;
+      display: block;
+      object-fit: cover;
+    }
+
+    .section-caption {
+      padding: 10px 16px 14px;
+      font-size: 12px;
+      color: #4A4843;
+      opacity: 0.65;
+      line-height: 1.6;
+      font-weight: 300;
+    }
+
+    /* Layout variations */
+    .section--wide { grid-column: span 2; }
+    .section--tall { grid-row: span 2; }
+    .section--hero { grid-column: span 2; grid-row: span 2; }
+
+    /* Specific image heights */
+    .img-square { aspect-ratio: 1; }
+    .img-landscape { aspect-ratio: 4/3; }
+    .img-portrait { aspect-ratio: 3/4; }
+    .img-wide { aspect-ratio: 16/9; }
+    .img-tall { aspect-ratio: 3/5; }
+
+    /* Texture pattern section */
+    .texture-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2px;
+    }
+
+    .texture-grid img {
+      width: 100%;
+      aspect-ratio: 1;
+      object-fit: cover;
+    }
+
+    /* Color chips in material section */
+    .material-chips {
+      display: flex;
+      gap: 8px;
+      padding: 12px 16px;
+      flex-wrap: wrap;
+    }
+
+    .material-chip {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 2px solid rgba(255,255,255,0.8);
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    }
+
+    /* Typography section */
+    .typo-demo {
+      padding: 20px 16px;
+      text-align: center;
+    }
+
+    .typo-demo h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-size: 28px;
+      letter-spacing: 4px;
+      color: #4A4843;
+      margin-bottom: 8px;
+    }
+
+    .typo-demo .tagline {
+      font-family: 'Noto Sans KR', sans-serif;
+      font-weight: 300;
+      font-size: 13px;
+      letter-spacing: 2px;
+      color: #8A9E91;
+      margin-bottom: 12px;
+    }
+
+    .typo-demo .body-text {
+      font-size: 11px;
+      line-height: 1.8;
+      color: #4A4843;
+      opacity: 0.5;
+      font-weight: 300;
+    }
+
+    /* Footer */
+    .board-footer {
+      text-align: center;
+      padding: 50px 40px 30px;
+      font-size: 11px;
+      letter-spacing: 2px;
+      color: #8A9E91;
+      font-weight: 300;
+    }
+
+    .board-footer .brand {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 16px;
+      letter-spacing: 4px;
+      color: #4A4843;
+      margin-bottom: 6px;
+    }
+
+    /* Responsive */
+    @media (max-width: 1024px) {
+      .moodboard { grid-template-columns: repeat(2, 1fr); }
+      .section--hero { grid-column: span 2; grid-row: span 1; }
+    }
+
+    @media (max-width: 640px) {
+      .moodboard { grid-template-columns: 1fr; }
+      .section--wide, .section--hero { grid-column: span 1; }
+      body { padding: 16px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="board-header">
+    <h1>BODYBAR</h1>
+    <div class="subtitle">BRAND IDENTITY MOOD BOARD</div>
+    <div class="concept">Warm Clean — 따뜻한 정화</div>
+  </div>
+
+  <!-- Color Palette Bar -->
+  <div class="color-bar">
+    <div class="color-swatch" style="background:#F5F0E8">
+      오트밀 크림<div class="hex">#F5F0E8</div>
+    </div>
+    <div class="color-swatch" style="background:#8A9E91">
+      시즈널 세이지<div class="hex">#8A9E91</div>
+    </div>
+    <div class="color-swatch" style="background:#C8846B">
+      더스트 코랄<div class="hex">#C8846B</div>
+    </div>
+    <div class="color-swatch" style="background:#94ABB0">
+      더스티 블루<div class="hex">#94ABB0</div>
+    </div>
+    <div class="color-swatch" style="background:#D6C49A">
+      샌드 허니<div class="hex">#D6C49A</div>
+    </div>
+    <div class="color-swatch" style="background:#4A4843; color:#F5F0E8">
+      웜 브라운 잉크<div class="hex">#4A4843</div>
+    </div>
+  </div>
+
+  <!-- Moodboard Grid — NORIN 10 Section Format -->
+  <div class="moodboard">
+
+    <!-- 01 Brand Concept (Hero — large) -->
+    <div class="section section--hero">
+      <div class="section-label">
+        <span class="number">01</span> BRAND CONCEPT
+      </div>
+      <img class="img-wide" src="https://plus.unsplash.com/premium_photo-1661953905893-cd83b5e16e41?w=1200&auto=format&fit=crop&q=80" alt="내추럴 욕실 — 따뜻한 정화 콘셉트">
+      <div class="section-caption">
+        차가운 클린이 아니라 <em>따뜻한 정화</em>.<br>
+        민감피부에게 맑게 씻는 청량감(쿨)과 가족 샤워 타임의 온기(웜)를 동시에.
+      </div>
+    </div>
+
+    <!-- 02 Color Palette -->
+    <div class="section">
+      <div class="section-label">
+        <span class="number">02</span> COLOR PALETTE
+      </div>
+      <img class="img-square" src="https://images.unsplash.com/photo-1607006344152-62699f97b42c?w=800&auto=format&fit=crop&q=80" alt="천연 비누 — 크림 톤">
+      <div class="section-caption">
+        60-30-10 비율. 오트밀 크림 베이스에 시즈널 세이지와 피치 코랄 포인트.
+      </div>
+    </div>
+
+    <!-- 03 Primary Texture — Soap -->
+    <div class="section">
+      <div class="section-label">
+        <span class="number">03</span> PRIMARY TEXTURE
+      </div>
+      <img class="img-square" src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad?w=800&auto=format&fit=crop&q=80" alt="핸드메이드 비누 — 내추럴 크림 톤">
+      <div class="section-caption">
+        비누 본연의 크림색. 안전의 원형 이미지. 손으로 직접 만지는 질감.
+      </div>
+    </div>
+
+    <!-- 04 Secondary Texture — Linen / Ceramic -->
+    <div class="section">
+      <div class="section-label">
+        <span class="number">04</span> SECONDARY TEXTURE
+      </div>
+      <div class="texture-grid">
+        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=600&auto=format&fit=crop&q=80" alt="내추럴 린넨 텍스처">
+        <img src="https://images.unsplash.com/photo-1528458909336-e7a0adfed0a5?w=600&auto=format&fit=crop&q=80" alt="베이지 천 텍스처">
+      </div>
+      <div class="texture-grid">
+        <img src="https://images.unsplash.com/photo-1604076913837-52ab5f25e8ce?w=600&auto=format&fit=crop&q=80" alt="크리미 텍스처">
+        <img src="https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=600&auto=format&fit=crop&q=80" alt="세라믹 질감">
+      </div>
+      <div class="section-caption">
+        린넨의 자연스러운 주름, 세라믹의 매끄러운 표면. 부드러움과 정제됨.
+      </div>
+    </div>
+
+    <!-- 05 Mood Image (Main) — Bathroom Spa -->
+    <div class="section">
+      <div class="section-label">
+        <span class="number">05</span> MOOD — MAIN
+      </div>
+      <img class="img-portrait" src="https://images.unsplash.com/photo-1545127398-14699f92334b?w=800&auto=format&fit=crop&q=80" alt="허브와 식물 — 시즈널 세이지">
+      <div class="section-caption">
+        허브와 자연이 공존하는 욕실. 세이지 그린이 정화의 시각적 은유.
+      </div>
+    </div>
+
+    <!-- 06 Mood Image (Sub) — Morning Light -->
+    <div class="section">
+      <div class="section-label">
+        <span class="number">06</span> MOOD — SUB
+      </div>
+      <img class="img-portrait" src="https://images.unsplash.com/photo-1516541196182-6bdb0516ed27?w=800&auto=format&fit=crop&q=80" alt="아침 햇살 — 따뜻한 자연광">
+      <div class="section-caption">
+        아침 햇살이 비치는 여백. 슬로우 라이프의 온기와 여유.
+      </div>
+    </div>
+
+    <!-- 07 Lifestyle / Context — Bath Time -->
+    <div class="section section--wide">
+      <div class="section-label">
+        <span class="number">07</span> LIFESTYLE / CONTEXT
+      </div>
+      <img class="img-landscape" src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad?w=1200&auto=format&fit=crop&q=80" alt="내추럴 비누와 식물 — 라이프스타일">
+      <div class="section-caption">
+        가족 샤워 타임의 따뜻한 온기. 거품, 향, 촛불. 셀프케어의 일상적 ritural.
+      </div>
+    </div>
+
+    <!-- 08 Pattern / Graphic — Botanical -->
+    <div class="section">
+      <div class="section-label">
+        <span class="number">08</span> PATTERN / GRAPHIC
+      </div>
+      <img class="img-square" src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=800&auto=format&fit=crop&q=80" alt="보타니컬 — 허브와 식물">
+      <div class="section-caption">
+        보타니컬 일러스트레이션. 라벤더, 세이지, 시트러스 라인업의 그래픽 요소.
+      </div>
+    </div>
+
+    <!-- 09 Typography Direction -->
+    <div class="section">
+      <div class="section-label">
+        <span class="number">09</span> TYPOGRAPHY
+      </div>
+      <div class="typo-demo">
+        <h2>Warm Clean</h2>
+        <div class="tagline">따 뜻 한 정 화</div>
+        <div class="body-text">
+          Serif + Sans 조합<br>
+          Cormorant Garamond 300<br>
+          Noto Sans KR Light 300<br>
+          Inter Light 300
+        </div>
+      </div>
+      <img class="img-landscape" src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800&auto=format&fit=crop&q=80" alt="린넨 텍스처 — 타이포 무드">
+    </div>
+
+    <!-- 10 Material Swatch -->
+    <div class="section">
+      <div class="section-label">
+        <span class="number">10</span> MATERIAL SWATCH
+      </div>
+      <img class="img-square" src="https://images.unsplash.com/photo-1607006344152-62699f97b42c?w=800&auto=format&fit=crop&q=80" alt="천연 비누 — 소재 스와치">
+      <div class="material-chips">
+        <div class="material-chip" style="background:#F5F0E8" title="오트밀 크림"></div>
+        <div class="material-chip" style="background:#8A9E91" title="시즈널 세이지"></div>
+        <div class="material-chip" style="background:#C8846B" title="더스트 코랄"></div>
+        <div class="material-chip" style="background:#94ABB0" title="더스티 블루"></div>
+        <div class="material-chip" style="background:#D6C49A" title="샌드 허니"></div>
+        <div class="material-chip" style="background:#4A4843" title="웜 브라운 잉크"></div>
+      </div>
+      <div class="section-caption">
+        비누 본연의 자연 소재. 알레르기 배제, 성분표 큐레이션의 시각적 표현.
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <div class="board-footer">
+    <div class="brand">BODYBAR</div>
+    민감피부 전용 친환경 솔리드 바 · Brand Identity Mood Board
+    <br>Images: Unsplash (free license) · 2026
+  </div>
+
+</body>
+</html>
