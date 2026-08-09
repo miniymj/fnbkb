@@ -16,7 +16,7 @@
 ## 3. 브랜드 상태 (8/9 기준)
 - **6대 요소**: 01 네이밍 / 02 컬러 팔레트 / 03 타이포그래피 / 04 보이스앤톤 / 05 무드보드 / 06 슬로건
 - **컬러 팔레트(02) — 3개 아이템 모두 완료**:
-  - **바디바(가칭 하이피부 HIGHSKIN)**: 무드보드는 **Happy Natural Care**로 전환(7색 — Cream `#FFF8EF` 50% · Soft Pink `#F6A6B8` 20% · Milk Pink · Apricot · Soft Sage · Leaf Green · Deep Brown). 참고: KB 팔레트 문서는 아직 `Warm Clean`(전환 대기)
+  - **바디바(가칭 하이피부 HIGHSKIN)**: **Happy Natural Care**로 전환 완료(7색 — Cream `#FFF8EF` 50% · Soft Pink `#F6A6B8` 20% · Milk Pink · Apricot · Soft Sage · Leaf Green · Deep Brown 3%). 무드보드 + KB 팔레트 문서(`bodybar-color-palette.md`) 모두 전환
   - **치마**: *Confident Curation* — 네이비·아이보리·비스트·코랄·라벤더·차콜 (6색)
   - **원피스**: *Garden Sea · 바다의 정원* — 라군 블루 `#5B8FA8` Primary (6색, WCAG 12.3:1 AAA)
 - **브랜드 패밀리**: 바디바(그린)·원피스(블루)·치마(네이비) — 웜톤 크림 공통 베이스, 경쟁사 차별화 완료
