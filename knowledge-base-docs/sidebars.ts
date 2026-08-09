@@ -138,6 +138,7 @@ const sidebars: SidebarsConfig = {
         'marketing/intro',
         'marketing/methodology',
         'marketing/launch-playbook',
+        'marketing/highskin-channel-strategy',
       ],
     },
     {

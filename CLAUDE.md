@@ -24,6 +24,7 @@
 - **AI 무드보드 프롬프트**: `docs/branding/moodboard-prompt-guide.md` — 나노바나 프로용 3종 (하이피부·치마·원피스) + 로고 생성(A/B) + 제품 시각화(P1/P2) 부록
 - **하이피부 제품 아이디어**: `docs/branding/highskin-product-ideas.md` — 샴푸브러시×비누 홀더(리필·반복구매) + 여행용 미니(50g+거품망) 세트
 - **하이피부 픽커 퀴즈**: `docs/branding/highskin-picker-quiz.md` — 구매 홈페이지 설문(피부타입·향·눈코입 커스텀 4×3×4=48조합) → 추천 상품+쿠폰. 스모어 제작, 그래픽은 가이드 부록 B(G1부품시트/G2캐릭터4종/G3 UI데코)
+- **하이피부 채널·콘텐츠 전략**: `docs/marketing/highskin-channel-strategy.md` — Recap 7가지 → OEP 채널·주력(인스타)/보조(블로그)/전환(스토어) → 크로스채널 퍼널 → 콘텐츠 필러 40/25/20/15 → 4주 캘린더 → AI 워크플로우(GPT→클로드→노트북LM→나노바나)
 - **다음 단계**: 03 타이포그래피 → 04 보이스앤톤 → 06 슬로건 (아이템별), 이후 커머스 등록 단계
 
 ## 4. 배포 운영 (GitHub Pages)
