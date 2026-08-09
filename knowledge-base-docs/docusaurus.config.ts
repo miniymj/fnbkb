@@ -32,6 +32,20 @@ const config: Config = {
     locales: ['ko'],
   },
 
+  plugins: [
+    [
+      require.resolve('@easyops-cn/docusaurus-search-local'),
+      {
+        // See https://github.com/easyops-cn/docusaurus-search-local/blob/main/README.md
+        indexDocs: true,
+        indexBlog: false,
+        language: ['ko', 'en'],
+        hashed: true,
+        docsRouteBasePath: '/docs',
+      },
+    ],
+  ],
+
   presets: [
     [
       'classic',

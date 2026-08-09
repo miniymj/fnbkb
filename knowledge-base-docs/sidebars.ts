@@ -35,6 +35,13 @@ const sidebars: SidebarsConfig = {
         'research/skirt-external-insights',
       ],
     },
+    {
+      type: 'category',
+      label: '📢 마케팅',
+      items: [
+        'marketing/visual-branding-skirt',
+      ],
+    },
   ],
 
   // ============================================================
@@ -48,6 +55,7 @@ const sidebars: SidebarsConfig = {
         'branding/md-lineup-resort-onesie',
         'branding/onesie-time-place-space-passion-worksheet',
         'branding/onesie-brand-color-palette',
+        'branding/onesie-persona-regulation-worksheet',
       ],
     },
     {
@@ -68,6 +76,13 @@ const sidebars: SidebarsConfig = {
         'research/resort-onesie-external-insights',
       ],
     },
+    {
+      type: 'category',
+      label: '📢 마케팅',
+      items: [
+        'marketing/visual-branding-onesie',
+      ],
+    },
   ],
 
   // ============================================================
@@ -82,6 +97,7 @@ const sidebars: SidebarsConfig = {
         'branding/md-lineup-bodybar',
         'branding/bodybar-time-place-space-passion-worksheet',
         'branding/bodybar-color-palette',
+        'branding/bodybar-persona-regulation-worksheet',
       ],
     },
     {
@@ -100,6 +116,13 @@ const sidebars: SidebarsConfig = {
         'research/competitive-analysis-differentiation',
         'research/youtube-review-analysis',
         'research/bodybar-external-insights',
+      ],
+    },
+    {
+      type: 'category',
+      label: '📢 마케팅',
+      items: [
+        'marketing/visual-branding-highskin',
       ],
     },
   ],
@@ -121,9 +144,11 @@ const sidebars: SidebarsConfig = {
       type: 'category',
       label: '브랜딩 가이드',
       items: [
+        'branding/intro',
         'branding/brand-identity-curriculum',
         'branding/brand-identity-guide',
         'branding/moodboard-prompt-guide',
+        'branding/highskin-image-prompts',
         'branding/highskin-product-ideas',
         'branding/highskin-picker-quiz',
         'branding/seller-persona',
@@ -139,7 +164,7 @@ const sidebars: SidebarsConfig = {
         'marketing/methodology',
         'marketing/launch-playbook',
         'marketing/highskin-channel-strategy',
-        'marketing/visual-branding-channel-results',
+        'marketing/visual-branding-common',
       ],
     },
     {
