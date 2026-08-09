@@ -83,6 +83,16 @@ import CsvTable from '@site/src/components/CsvTable';
 
 > 📎 강의 원본 예시: 아래 **결과물 원본 이미지 갤러리** 참조 (비주얼 설계 1~5)
 
+### 🧼 바디바 무드보드 (ChatGPT 생성 · 3안)
+
+> 프롬프트 1(HIGHSKIN Happy Natural Care) 기반으로 ChatGPT에서 생성한 무드보드 3안. 10구역 그리드 레이아웃에 하이피부 7색 팔레트·아이 손그림 캐릭터·리필 홀더·가족 목욕 무드 반영. 원본: `0807Visual_Braning_design_channels/`
+
+![바디바 무드보드 1안](/img/class-0807/bodybar-moodboard-1.webp)
+![바디바 무드보드 2안](/img/class-0807/bodybar-moodboard-2.webp)
+![바디바 무드보드 3안](/img/class-0807/bodybar-moodboard-3.webp)
+
+> **활용**: 위 무드보드의 시각 방향(크림 베이스·파스텔 그리드·아이 손그림 캐릭터)을 **P3 바디바 언박싱 패키지 디자인**에도 동일하게 적용 → `moodboard-prompt-guide.md` 부록 C P3 참고
+
 ## 1-② 인스타 채널 카드뉴스 (4장)
 > 📥 [카드뉴스 전체 데이터 CSV](/data/marketing-calendar/cardnews_all.csv) — 3개 아이템 12장
 - 구성: ①브랜딩(캐릭터 탄생) ②판매(리필 홀더 세트) ③정보(민감피부 성분) ④참여(픽커 퀴즈)
