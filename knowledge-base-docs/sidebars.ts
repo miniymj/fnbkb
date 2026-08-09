@@ -123,6 +123,7 @@ const sidebars: SidebarsConfig = {
       items: [
         'branding/brand-identity-curriculum',
         'branding/brand-identity-guide',
+        'branding/moodboard-prompt-guide',
         'branding/seller-persona',
         'branding/persona-regulation-worksheet',
         'branding/time-place-space-passion-worksheet',

@@ -16,11 +16,12 @@
 ## 3. 브랜드 상태 (8/9 기준)
 - **6대 요소**: 01 네이밍 / 02 컬러 팔레트 / 03 타이포그래피 / 04 보이스앤톤 / 05 무드보드 / 06 슬로건
 - **컬러 팔레트(02) — 3개 아이템 모두 완료**:
-  - **바디바**: *Warm Clean · 따뜻한 정화* — 크림 베이스 + 시즈널 세이지·더스트 코랄·더스티 블루 (8/7 뮤티드/내추럴 톤 리비전 반영)
+  - **바디바(가칭 하이피부 HIGHSKIN)**: 무드보드는 **Happy Natural Care**로 전환(7색 — Cream `#FFF8EF` 50% · Soft Pink `#F6A6B8` 20% · Milk Pink · Apricot · Soft Sage · Leaf Green · Deep Brown). 참고: KB 팔레트 문서는 아직 `Warm Clean`(전환 대기)
   - **치마**: *Confident Curation* — 네이비·아이보리·비스트·코랄·라벤더·차콜 (6색)
   - **원피스**: *Garden Sea · 바다의 정원* — 라군 블루 `#5B8FA8` Primary (6색, WCAG 12.3:1 AAA)
 - **브랜드 패밀리**: 바디바(그린)·원피스(블루)·치마(네이비) — 웜톤 크림 공통 베이스, 경쟁사 차별화 완료
-- **무드보드(05)**: 3개 아이템 HTML 무드보드 완성 → `moodboard-{bodybar,skirt,onesie}.html` (바디바·치마·원피스, Unsplash 외부 이미지, 루트에 위치, 10섹션 공통 포맷)
+- **무드보드(05)**: 3개 아이템 HTML 무드보드 완성 → `moodboard-{bodybar,skirt,onesie}.html` (바디바는 **하이피부/Happy Natural Care** 버전, Unsplash 외부 이미지, 루트에 위치, 10섹션 공통 포맷)
+- **AI 무드보드 프롬프트**: `docs/branding/moodboard-prompt-guide.md` — 나노바나 프로용 3종 (하이피부·치마·원피스)
 - **다음 단계**: 03 타이포그래피 → 04 보이스앤톤 → 06 슬로건 (아이템별), 이후 커머스 등록 단계
 
 ## 4. 배포 운영 (GitHub Pages)
