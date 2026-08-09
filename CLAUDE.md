@@ -43,11 +43,12 @@
 - **검증**: `curl -s -o /dev/null -w '%{http_code}' https://miniymj.github.io/fnbkb/docs/branding/{slug}/` → 200
 
 ## 5. 작업 규칙
-- 커밋 컨벤션: 한글 + 태그 (`feat:`/`fix:`/`docs:`/`chore:`)
+- 커밋 컨벤션: 한글 + 태그 (`feat:`/`fix:`/`docs:`/`chore:`/`perf:`)
 - 문서 추가·수정 시 `sidebars.ts` 반영 (Docusaurus)
 - 컬러 팔레트 문서: WCAG 대비·CMYK 환산·색상환 하모니 검증 포함, 치마 팔레트와 동일한 섹션 템플릿 유지
 - 빌드 검증: `cd knowledge-base-docs && npm run build` (SUCCESS 확인 후 push)
 - 스마트스토어 판매 준비는 `docs/research/execution-plan.md` · `launch-playbook.md` 참조
+- **🖼 이미지 게시 = WebP 디폴트**: static에 게시하는 이미지는 항상 WebP(quality 80)로 경량화 후 커밋. `python3 scripts/to-webp.py {폴더} --replace` (스킬: `.claude/commands/webp.md`). 문서 참조는 `.webp` 사용
 
 ## 6. 세션 이어가기 체크리스트
 - [ ] `git log --oneline -10` — 최신 작업 확인
@@ -57,7 +58,7 @@
 
 ## 7. 이미지 생성 스킬 (ChatGPT gpt-image-1)
 - **사용**: `python3 scripts/gen-image.py "프롬프트"` — 키는 `./.keys/.apikeys`에서 자동 로드
-- **KB 표출(기본)**: 생성 이미지는 `knowledge-base-docs/static/img/highskin/`에 저장 → 문서에 `![](/img/highskin/{파일})` 참조 → 커밋·배포 → 라이브 `https://miniymj.github.io/fnbkb/img/highskin/{파일}` 표출
+- **KB 표출(기본)**: 생성 이미지는 `knowledge-base-docs/static/img/highskin/`에 저장 → **PNG+WebP(quality 80) 자동 생성** → 문서에 `![](/img/highskin/{파일}.webp)` 참조 → 커밋·배포 → 라이브 표출
 - **임시 파일**: `--out output/xxx.png` (gitignore)
 - **스킬 문서**: `.claude/commands/imagegen.md` (하이피부 팔레트·용도별 프롬프트·파일명 규칙·비용 주의)
 - **보안**: `.keys/`는 `.gitignore` 포함 — 절대 커밋·출력 금지

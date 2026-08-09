@@ -101,14 +101,26 @@ def main():
     else:
         sys.exit("[ERROR] 알 수 없는 응답 형식")
 
+    # WebP 자동 경량화 (게시 디폴트: quality 80)
+    webp_out = None
+    try:
+        sys.path.insert(0, os.path.expanduser("~/Library/Python/3.9/lib/python/site-packages"))
+        from PIL import Image
+        webp_out = os.path.splitext(out)[0] + ".webp"
+        Image.open(out).save(webp_out, "WEBP", quality=80, method=6)
+    except Exception as e:
+        print(f"[!] WebP 변환 생략: {e}")
+
     revised = img.get("revised_prompt", "")
     print(f"[OK] 저장 완료: {out}")
+    if webp_out:
+        print(f"[OK] WebP 경량화: {webp_out}")
     if revised:
         print(f"[*] revised_prompt: {revised}")
 
-    # KB 표출 안내
+    # KB 표출 안내 (WebP 우선)
     if out.startswith(KB_IMG_DIR):
-        rel = os.path.relpath(out, KB_IMG_DIR)
+        rel = os.path.basename(webp_out) if webp_out else os.path.relpath(out, KB_IMG_DIR)
         print(f"[KB] 표출 URL (배포 후): https://miniymj.github.io/fnbkb/img/highskin/{rel}")
         print(f"[KB] 문서 참조: ![](/img/highskin/{rel})")
 
