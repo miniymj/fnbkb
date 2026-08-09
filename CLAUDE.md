@@ -21,7 +21,8 @@
   - **원피스**: *Garden Sea · 바다의 정원* — 라군 블루 `#5B8FA8` Primary (6색, WCAG 12.3:1 AAA)
 - **브랜드 패밀리**: 바디바(그린)·원피스(블루)·치마(네이비) — 웜톤 크림 공통 베이스, 경쟁사 차별화 완료
 - **무드보드(05)**: 3개 아이템 HTML 무드보드 완성 → `moodboard-{bodybar,skirt,onesie}.html` (바디바는 **하이피부/Happy Natural Care** 버전, Unsplash 외부 이미지, 루트에 위치, 10섹션 공통 포맷)
-- **AI 무드보드 프롬프트**: `docs/branding/moodboard-prompt-guide.md` — 나노바나 프로용 3종 (하이피부·치마·원피스)
+- **AI 무드보드 프롬프트**: `docs/branding/moodboard-prompt-guide.md` — 나노바나 프로용 3종 (하이피부·치마·원피스) + 로고 생성(A/B) + 제품 시각화(P1/P2) 부록
+- **하이피부 제품 아이디어**: `docs/branding/highskin-product-ideas.md` — 샴푸브러시×비누 홀더(리필·반복구매) + 여행용 미니(50g+거품망) 세트
 - **다음 단계**: 03 타이포그래피 → 04 보이스앤톤 → 06 슬로건 (아이템별), 이후 커머스 등록 단계
 
 ## 4. 배포 운영 (GitHub Pages)
