@@ -2,6 +2,7 @@
 .datalab
 .env
 *.env
+.keys/
 
 # Python
 __pycache__/
@@ -44,6 +45,9 @@ Thumbs.db
 # Logs
 *.log
 logs/
+
+# Generated images (스킬 산출물 — 커밋 대상 아님)
+output/
 
 # Temporary files
 *.tmp

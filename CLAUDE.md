@@ -49,3 +49,9 @@
 - [ ] `git status` — 미커밋/미추적 파일 정리 여부
 - [ ] 배포 상태: `gh run list --repo miniymj/fnbkb --limit 3`
 - [ ] 라이브 200 OK 확인
+
+## 7. 이미지 생성 스킬 (ChatGPT gpt-image-1)
+- **사용**: `python3 scripts/gen-image.py "프롬프트" --out output/{용도}.png` — 키는 `./.keys/.apikeys`에서 자동 로드
+- **스킬 문서**: `.claude/commands/imagegen.md` (하이피부 팔레트·용도별 프롬프트 참조·비용 주의)
+- **보안**: `.keys/`는 `.gitignore` 포함 — 절대 커밋·출력 금지
+- **용도별 프롬프트**: `docs/branding/moodboard-prompt-guide.md` 부록 A~D (로고/픽커/제품/채널)
