@@ -1,3 +1,5 @@
+import CsvTable from '@site/src/components/CsvTable';
+
 # 8/7 비주얼 브랜딩·채널 기획 결과물 — 3개 아이템 적용
 
 > **작성일**: 2026-08-09
@@ -40,6 +42,30 @@
 
 ### ④ 연·월 행사 마케팅 콘텐츠 캘린더
 ![연월 행사 콘텐츠 캘린더](/img/class-0807/yearly-content-calendar.png)
+
+---
+
+## 📊 캘린더 데이터 시각화 (CSV)
+
+> 아래 표는 `static/data/marketing-calendar/*.csv`를 실시간 렌더링한 것입니다. CSV가 갱신되면 이 표도 자동 반영됩니다.
+
+### 2026 공휴일
+<CsvTable src="/data/marketing-calendar/2026_holidays.csv" caption="📅 2026 대한민국 공휴일 (실제 날짜 검증)" />
+
+### 2026 대형 이벤트
+<CsvTable src="/data/marketing-calendar/2026_key_events.csv" caption="🏆 2026 대형 이벤트" />
+
+### 하이피부 월별 이슈 캘린더
+<CsvTable src="/data/marketing-calendar/issue_calendar_highskin.csv" caption="🛁 하이피부 이슈 캘린더" highlightKey="priority" />
+
+### 치마 월별 이슈 캘린더
+<CsvTable src="/data/marketing-calendar/issue_calendar_skirt.csv" caption="👗 치마 이슈 캘린더" highlightKey="priority" />
+
+### 원피스 월별 이슈 캘린더
+<CsvTable src="/data/marketing-calendar/issue_calendar_onesie.csv" caption="🌊 원피스 이슈 캘린더" highlightKey="priority" />
+
+### 하이피부 4주 콘텐츠 캘린더
+<CsvTable src="/data/marketing-calendar/4week_content_highskin.csv" caption="🗓 하이피부 4주 콘텐츠 캘린더" />
 
 ---
 

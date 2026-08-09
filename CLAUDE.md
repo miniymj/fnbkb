@@ -29,6 +29,7 @@
 - **8/7 강의 원본 이미지**: `static/img/class-0807/` — 비주얼 설계 5장·인스타 카드뉴스·이슈 캘린더 PDF·연월 캘린더 (문서에 갤러리로 표출, `#result-images` 앵커)
 - **표 데이터 CSV**: 캘린더·카드뉴스 등 표형 데이터는 `static/data/marketing-calendar/*.csv`(UTF-8 BOM)로 관리 → 문서는 CSV 링크로 참조. 생성/수정 시 동기화 필수
 - **2026 캘린더 운영형 확장**: 공휴일(`2026_holidays.csv`)·대형 이벤트(`2026_key_events.csv`)·월별 이슈(실제 날짜·캠페인·CTA·우선순위) — 외부 검증(위키백과 공휴일 법률·국제대회 일정) 완료. 수정 시 검증 일자 갱신
+- **CSV 시각화 컴포넌트**: `src/components/CsvTable.js` — MDX에서 `<CsvTable src="/data/..." caption="..." highlightKey="priority" />`로 CSV를 표 렌더링. CSV 수정 시 표 자동 반영(클라이언트 fetch). 새 CSV 추가 시 문서에도 삽입
 - **다음 단계**: 03 타이포그래피 → 04 보이스앤톤 → 06 슬로건 (아이템별), 이후 커머스 등록 단계
 
 ## 4. 배포 운영 (GitHub Pages)

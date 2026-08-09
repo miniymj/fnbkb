@@ -1,3 +1,5 @@
+import CsvTable from '@site/src/components/CsvTable';
+
 # 하이피부(HIGHSKIN) 채널 & 콘텐츠 전략
 
 > **작성일**: 2026-08-09
@@ -82,6 +84,7 @@ flowchart LR
 
 ## 6. 4주 콘텐츠 캘린더
 > 📥 [하이피부 4주 콘텐츠 캘린더 CSV](/data/marketing-calendar/4week_content_highskin.csv)
+<CsvTable src="/data/marketing-calendar/4week_content_highskin.csv" caption="🗓 하이피부 4주 콘텐츠 캘린더 (실시간)" />
 - **주별 요약**: 1주(브랜딩·참여) → 2주(정보·참여·판매) → 3주(브랜딩·정보·판매) → 4주(판매·참여·브랜딩)
 - **필러 배분**: 브랜딩 3 · 정보 3 · 참여 3 · 판매 3 (균형)
 
