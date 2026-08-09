@@ -21,7 +21,7 @@
   - **원피스**: *Garden Sea · 바다의 정원* — 라군 블루 `#5B8FA8` Primary (6색, WCAG 12.3:1 AAA)
 - **브랜드 패밀리**: 바디바(그린)·원피스(블루)·치마(네이비) — 웜톤 크림 공통 베이스, 경쟁사 차별화 완료
 - **무드보드(05)**: 3개 아이템 HTML 무드보드 완성 → `moodboard-{bodybar,skirt,onesie}.html` (바디바는 **하이피부/Happy Natural Care** 버전, Unsplash 외부 이미지, 루트에 위치, 10섹션 공통 포맷)
-- **AI 무드보드 프롬프트**: `docs/branding/moodboard-prompt-guide.md` — 나노바나 프로용 3종 (하이피부·치마·원피스) + 로고 생성(A/B) + 제품 시각화(P1/P2) 부록
+- **AI 무드보드 프롬프트**: `docs/branding/moodboard-prompt-guide.md` — 나노바나 프로용 3종 (하이피부·치마·원피스) + 로고(A) · 픽커(B) · 제품(C) · 채널(D) · 8/7 결과물(E) · **런칭 릴스 영상(F, Veo3/Sora/Kling)**
 - **하이피부 제품 아이디어**: `docs/branding/highskin-product-ideas.md` — 샴푸브러시×비누 홀더(리필·반복구매) + 여행용 미니(50g+거품망) 세트
 - **하이피부 픽커 퀴즈**: `docs/branding/highskin-picker-quiz.md` — 구매 홈페이지 설문(피부타입·향·눈코입 커스텀 4×3×4=48조합) → 추천 상품+쿠폰. 스모어 제작, 그래픽은 가이드 부록 B(G1부품시트/G2캐릭터4종/G3 UI데코)
 - **하이피부 채널·콘텐츠 전략**: `docs/marketing/highskin-channel-strategy.md` — Recap 7가지 → OEP 채널·주력(인스타)/보조(블로그)/전환(스토어) → 크로스채널 퍼널 → 콘텐츠 필러 40/25/20/15 → 4주 캘린더 → AI 워크플로우(GPT→클로드→노트북LM→나노바나)
