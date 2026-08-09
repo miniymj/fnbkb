@@ -121,6 +121,7 @@ const sidebars: SidebarsConfig = {
       type: 'category',
       label: '브랜딩 가이드',
       items: [
+        'branding/brand-identity-curriculum',
         'branding/brand-identity-guide',
         'branding/seller-persona',
         'branding/persona-regulation-worksheet',
