@@ -21,6 +21,29 @@
 
 ---
 
+## 📸 8/7 결과물 원본 이미지 (강의 자료)
+
+> 원본: `0807Visual_Braning_design_channels/` → KB `static/img/class-0807/` · 이미지를 클릭하면 원본 크기로 열립니다.
+
+### ① 비주얼 브랜딩 설계 (5장)
+![비주얼 브랜딩 설계 1](/img/class-0807/visual-branding-design-1.png)
+![비주얼 브랜딩 설계 2](/img/class-0807/visual-branding-design-2.png)
+![비주얼 브랜딩 설계 3](/img/class-0807/visual-branding-design-3.png)
+![비주얼 브랜딩 설계 4](/img/class-0807/visual-branding-design-4.png)
+![비주얼 브랜딩 설계 5](/img/class-0807/visual-branding-design-5.png)
+
+### ② 인스타 채널 카드뉴스
+![인스타 채널 카드뉴스](/img/class-0807/insta-cardnews-1.png)
+
+### ③ 2026 마케팅 이슈 캘린더 (PDF)
+📥 [2026 마케팅 이슈 캘린더 PDF 다운로드](/img/class-0807/2026-marketing-issue-calendar.pdf)
+
+### ④ 연·월 행사 마케팅 콘텐츠 캘린더
+![연월 행사 콘텐츠 캘린더](/img/class-0807/yearly-content-calendar.png)
+
+---
+
+
 # 1. 하이피부(HIGHSKIN) — 바디바
 
 ## 1-① 비주얼 브랜딩 설계 (5장)
@@ -31,6 +54,8 @@
 | 3. 로고/심벌 | 표정 콜라주 | 2x3 얼굴 콜라주(컬러) + 단색 각인용(모노크롬) — 부록 A |
 | 4. 무드보드 | 크림-핑크 파스텔 | 아이 손그림 · 비눗방울 · 거품 · 가족 목욕 (`moodboard-bodybar.html`) |
 | 5. 패키지/적용 | 비누 각인 + 크래프트지 | 딥 브라운 각인 · 리필 홀더 + 여행 미니 세트 패키지 |
+
+> 📎 강의 원본 예시: 아래 **결과물 원본 이미지 갤러리** 참조 (비주얼 설계 1~5)
 
 ## 1-② 인스타 채널 카드뉴스 (4장)
 > 📥 [카드뉴스 전체 데이터 CSV](/data/marketing-calendar/cardnews_all.csv) — 3개 아이템 12장
@@ -64,6 +89,8 @@
 | 4. 무드보드 | 편집화보 무드 | 오피스·면접·웨딩하객 장면, 테일러링 우브 (`moodboard-skirt.html`) |
 | 5. 패키지/적용 | 상세페이지 · 라벨 | 아이보리 라벨 + 네이비 텍스트, 사이즈·상황 태그 |
 
+> 📎 강의 원본 예시: 아래 **결과물 원본 이미지 갤러리** 참조 (비주얼 설계 1~5)
+
 ## 2-② 인스타 채널 카드뉴스 (4장)
 > 📥 [카드뉴스 전체 데이터 CSV](/data/marketing-calendar/cardnews_all.csv)
 - 구성: ①브랜딩(첫인상 3초) ②정보(체형별 핏) ③판매(상황별 3세트) ④참여(스타일 투표)
@@ -92,6 +119,8 @@
 | 3. 로고/심벌 | 여유로운 워드마크 | "RESORT ONESIE" + 파도/해변 아이콘 |
 | 4. 무드보드 | 바다·리조트 무드 | 수평선·리조트 풀·해변 실루엣 (`moodboard-onesie.html`) |
 | 5. 패키지/적용 | 라벨 · 행거택 | 세라믹 화이트 라벨 + 라군 블루 포인트, 사이즈(44~120) 안내 |
+
+> 📎 강의 원본 예시: 아래 **결과물 원본 이미지 갤러리** 참조 (비주얼 설계 1~5)
 
 ## 3-② 인스타 채널 카드뉴스 (4장)
 > 📥 [카드뉴스 전체 데이터 CSV](/data/marketing-calendar/cardnews_all.csv)
