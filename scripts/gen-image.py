@@ -18,8 +18,13 @@ import re
 import sys
 import urllib.error
 import urllib.request
+from datetime import datetime
 
 KEY_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".keys", ".apikeys")
+# KB(표출) 기본 저장 경로: knowledge-base-docs/static/img/highskin/ → https://miniymj.github.io/fnbkb/img/highskin/{파일}
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+KB_IMG_DIR = os.path.join(PROJECT_ROOT, "knowledge-base-docs", "static", "img", "highskin")
+DEFAULT_OUT = os.path.join(KB_IMG_DIR, "gen-{timestamp}.png")
 
 
 def load_key():
@@ -67,10 +72,15 @@ def _err_body(e):
 def main():
     ap = argparse.ArgumentParser(description="ChatGPT 이미지 생성 (gpt-image-1)")
     ap.add_argument("prompt", help="이미지 생성 프롬프트")
-    ap.add_argument("--out", default="output/gen-image.png", help="저장 경로 (기본 output/gen-image.png)")
+    ap.add_argument("--out", default=None, help=f"저장 경로 (기본: KB 표출 경로 {DEFAULT_OUT})")
     ap.add_argument("--size", default="1024x1024", choices=["1024x1024", "1024x1536", "1536x1024"], help="이미지 크기")
     ap.add_argument("--n", type=int, default=1, help="생성 수 (gpt-image-1은 1만 지원)")
     args = ap.parse_args()
+
+    # 기본 저장: KB static(표출) 경로로
+    if args.out is None:
+        ts = datetime.now().strftime("%Y%m%d-%H%M%S")
+        args.out = os.path.join(KB_IMG_DIR, f"gen-{ts}.png")
 
     out = os.path.abspath(args.out)
     os.makedirs(os.path.dirname(out), exist_ok=True)
@@ -95,6 +105,12 @@ def main():
     print(f"[OK] 저장 완료: {out}")
     if revised:
         print(f"[*] revised_prompt: {revised}")
+
+    # KB 표출 안내
+    if out.startswith(KB_IMG_DIR):
+        rel = os.path.relpath(out, KB_IMG_DIR)
+        print(f"[KB] 표출 URL (배포 후): https://miniymj.github.io/fnbkb/img/highskin/{rel}")
+        print(f"[KB] 문서 참조: ![](/img/highskin/{rel})")
 
 
 if __name__ == "__main__":

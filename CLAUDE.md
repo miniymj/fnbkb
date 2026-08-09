@@ -51,7 +51,9 @@
 - [ ] 라이브 200 OK 확인
 
 ## 7. 이미지 생성 스킬 (ChatGPT gpt-image-1)
-- **사용**: `python3 scripts/gen-image.py "프롬프트" --out output/{용도}.png` — 키는 `./.keys/.apikeys`에서 자동 로드
-- **스킬 문서**: `.claude/commands/imagegen.md` (하이피부 팔레트·용도별 프롬프트 참조·비용 주의)
+- **사용**: `python3 scripts/gen-image.py "프롬프트"` — 키는 `./.keys/.apikeys`에서 자동 로드
+- **KB 표출(기본)**: 생성 이미지는 `knowledge-base-docs/static/img/highskin/`에 저장 → 문서에 `![](/img/highskin/{파일})` 참조 → 커밋·배포 → 라이브 `https://miniymj.github.io/fnbkb/img/highskin/{파일}` 표출
+- **임시 파일**: `--out output/xxx.png` (gitignore)
+- **스킬 문서**: `.claude/commands/imagegen.md` (하이피부 팔레트·용도별 프롬프트·파일명 규칙·비용 주의)
 - **보안**: `.keys/`는 `.gitignore` 포함 — 절대 커밋·출력 금지
 - **용도별 프롬프트**: `docs/branding/moodboard-prompt-guide.md` 부록 A~D (로고/픽커/제품/채널)
