@@ -28,20 +28,20 @@ import CsvTable from '@site/src/components/CsvTable';
 > 원본: `0807Visual_Braning_design_channels/` → KB `static/img/class-0807/` · 이미지를 클릭하면 원본 크기로 열립니다.
 
 ### ① 비주얼 브랜딩 설계 (5장)
-![비주얼 브랜딩 설계 1](/img/class-0807/visual-branding-design-1.png)
-![비주얼 브랜딩 설계 2](/img/class-0807/visual-branding-design-2.png)
-![비주얼 브랜딩 설계 3](/img/class-0807/visual-branding-design-3.png)
-![비주얼 브랜딩 설계 4](/img/class-0807/visual-branding-design-4.png)
-![비주얼 브랜딩 설계 5](/img/class-0807/visual-branding-design-5.png)
+![비주얼 브랜딩 설계 1](/img/class-0807/visual-branding-design-1.webp)
+![비주얼 브랜딩 설계 2](/img/class-0807/visual-branding-design-2.webp)
+![비주얼 브랜딩 설계 3](/img/class-0807/visual-branding-design-3.webp)
+![비주얼 브랜딩 설계 4](/img/class-0807/visual-branding-design-4.webp)
+![비주얼 브랜딩 설계 5](/img/class-0807/visual-branding-design-5.webp)
 
 ### ② 인스타 채널 카드뉴스
-![인스타 채널 카드뉴스](/img/class-0807/insta-cardnews-1.png)
+![인스타 채널 카드뉴스](/img/class-0807/insta-cardnews-1.webp)
 
 ### ③ 2026 마케팅 이슈 캘린더 (PDF)
 📥 [2026 마케팅 이슈 캘린더 PDF 다운로드](/img/class-0807/2026-marketing-issue-calendar.pdf)
 
 ### ④ 연·월 행사 마케팅 콘텐츠 캘린더
-![연월 행사 콘텐츠 캘린더](/img/class-0807/yearly-content-calendar.png)
+![연월 행사 콘텐츠 캘린더](/img/class-0807/yearly-content-calendar.webp)
 
 ---
 
