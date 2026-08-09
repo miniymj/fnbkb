@@ -124,21 +124,13 @@ import CsvTable from '@site/src/components/CsvTable';
 **🖼 통합 콜라주** (낱장 카드 14장을 한 장으로 합성)
 ![카드뉴스 통합 콜라주](/img/class-0807/cardnews/cardnews-collage.webp)
 
-**낱장 카드 (14장)**
-![카드뉴스 01](/img/class-0807/cardnews/cardnews-01.webp)
-![카드뉴스 02](/img/class-0807/cardnews/cardnews-02.webp)
-![카드뉴스 03](/img/class-0807/cardnews/cardnews-03.webp)
-![카드뉴스 04](/img/class-0807/cardnews/cardnews-04.webp)
-![카드뉴스 05](/img/class-0807/cardnews/cardnews-05.webp)
-![카드뉴스 06](/img/class-0807/cardnews/cardnews-06.webp)
-![카드뉴스 07](/img/class-0807/cardnews/cardnews-07.webp)
-![카드뉴스 08](/img/class-0807/cardnews/cardnews-08.webp)
-![카드뉴스 09](/img/class-0807/cardnews/cardnews-09.webp)
-![카드뉴스 10](/img/class-0807/cardnews/cardnews-10.webp)
-![카드뉴스 11](/img/class-0807/cardnews/cardnews-11.webp)
-![카드뉴스 12](/img/class-0807/cardnews/cardnews-12.webp)
-![카드뉴스 13](/img/class-0807/cardnews/cardnews-13.webp)
-![카드뉴스 14](/img/class-0807/cardnews/cardnews-14.webp)
+**월별 콜라주** (낱장 개별 표시는 제거 · 클릭 시 확대)
+**2월 · 설·동계올림픽 (4장)**
+![2월 카드 콜라주](/img/class-0807/cardnews/collage-feb.webp)
+**5월 · 가정의 달 (5장)**
+![5월 카드 콜라주](/img/class-0807/cardnews/collage-may.webp)
+**그 외 카드 (5장)**
+![그 외 카드 콜라주](/img/class-0807/cardnews/collage-other.webp)
 
 **이미 콜라주인 이미지 (3장 · 가로형)**
 > ChatGPT가 여러 장을 한 번에 합성한 결과물 — 낱장으로 분리하지 않고 원본 그대로 표시합니다.
