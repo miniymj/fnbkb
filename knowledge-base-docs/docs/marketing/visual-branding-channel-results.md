@@ -118,6 +118,34 @@ import CsvTable from '@site/src/components/CsvTable';
 > 📥 [카드뉴스 전체 데이터 CSV](/data/marketing-calendar/cardnews_all.csv) — 3개 아이템 12장
 - 구성: ①브랜딩(캐릭터 탄생) ②판매(리필 홀더 세트) ③정보(민감피부 성분) ④참여(픽커 퀴즈)
 
+### 1-②-2 ChatGPT 생성 카드뉴스 결과물 (2026-08-10)
+> 부록 **E2c**(ChatGPT 독립 실행형 프롬프트)로 생성한 2026 월별 이슈 카드뉴스 시리즈 — 이미지를 클릭하면 원본 크기로 열립니다.
+
+**🖼 통합 콜라주** (낱장 카드 14장을 한 장으로 합성)
+![카드뉴스 통합 콜라주](/img/class-0807/cardnews/cardnews-collage.webp)
+
+**낱장 카드 (14장)**
+![카드뉴스 01](/img/class-0807/cardnews/cardnews-01.webp)
+![카드뉴스 02](/img/class-0807/cardnews/cardnews-02.webp)
+![카드뉴스 03](/img/class-0807/cardnews/cardnews-03.webp)
+![카드뉴스 04](/img/class-0807/cardnews/cardnews-04.webp)
+![카드뉴스 05](/img/class-0807/cardnews/cardnews-05.webp)
+![카드뉴스 06](/img/class-0807/cardnews/cardnews-06.webp)
+![카드뉴스 07](/img/class-0807/cardnews/cardnews-07.webp)
+![카드뉴스 08](/img/class-0807/cardnews/cardnews-08.webp)
+![카드뉴스 09](/img/class-0807/cardnews/cardnews-09.webp)
+![카드뉴스 10](/img/class-0807/cardnews/cardnews-10.webp)
+![카드뉴스 11](/img/class-0807/cardnews/cardnews-11.webp)
+![카드뉴스 12](/img/class-0807/cardnews/cardnews-12.webp)
+![카드뉴스 13](/img/class-0807/cardnews/cardnews-13.webp)
+![카드뉴스 14](/img/class-0807/cardnews/cardnews-14.webp)
+
+**이미 콜라주인 이미지 (3장 · 가로형)**
+> ChatGPT가 여러 장을 한 번에 합성한 결과물 — 낱장으로 분리하지 않고 원본 그대로 표시합니다.
+![카드뉴스 콜라주 15](/img/class-0807/cardnews/cardnews-15.webp)
+![카드뉴스 콜라주 16](/img/class-0807/cardnews/cardnews-16.webp)
+![카드뉴스 콜라주 17](/img/class-0807/cardnews/cardnews-17.webp)
+
 ## 1-③ 2026 마케팅 이슈 캘린더 연동
 > 📥 [하이피부 이슈 캘린더 CSV](/data/marketing-calendar/issue_calendar_highskin.csv) · [2026 공통 이슈 CSV](/data/marketing-calendar/2026_marketing_issues.csv)
 - **피크**: 설(2월) · 가정의 달(5월) · 여름 휴가(6~7월) · 쇼핑 기획전(11~12월)
