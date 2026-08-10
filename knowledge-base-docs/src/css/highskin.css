@@ -1,0 +1,1380 @@
+/**
+ * HI-SKIN 하이피부 — 전용 디자인 시스템
+ *
+ * 적용 범위: /highskin 하위 모든 페이지
+ * 적용 방식: .hi-app 루트 컨테이너로 스코핑 — KB 기본 테마는 영향 없음
+ *
+ * 컬러 시스템: Cream 60% / Pink 15% / Sage 10% / Apricot 7% / Green 5% / Brown 3%
+ * 폰트: SUIT(본문) + Cormorant Garamond(헤드라인 serif)
+ * 디자인 축: PLAYFUL × USEFUL × NATURAL
+ */
+
+/* ============================================================
+ * Cormorant Garamond (헤드라인 serif) — Google Fonts
+ * ============================================================ */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap');
+
+/* ============================================================
+ * CSS 변수 — HI-SKIN 컬러 시스템
+ * ============================================================ */
+.hi-app {
+  /* 브랜드 컬러 */
+  --hi-cream: #FFF8EF;
+  --hi-pink: #F6A6B8;
+  --hi-milk-pink: #FCE8EC;
+  --hi-sage: #AFC7A8;
+  --hi-apricot: #F4B27D;
+  --hi-green: #6F9470;
+  --hi-brown: #403735;
+
+  /* 파생 컬러 */
+  --hi-pink-soft: rgba(246, 166, 184, 0.12);
+  --hi-sage-soft: rgba(175, 199, 168, 0.15);
+  --hi-brown-60: rgba(64, 55, 53, 0.6);
+  --hi-brown-40: rgba(64, 55, 53, 0.4);
+  --hi-brown-20: rgba(64, 55, 53, 0.2);
+  --hi-brown-10: rgba(64, 55, 53, 0.1);
+
+  /* 폰트 */
+  --hi-font-base: 'SUIT', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
+  --hi-font-serif: 'Cormorant Garamond', 'SUIT', Georgia, serif;
+
+  /* 라운드 */
+  --hi-radius-sm: 8px;
+  --hi-radius-md: 16px;
+  --hi-radius-lg: 24px;
+  --hi-radius-pill: 999px;
+
+  /* 그림자 */
+  --hi-shadow-sm: 0 1px 8px rgba(64, 55, 53, 0.06);
+  --hi-shadow-md: 0 4px 20px rgba(64, 55, 53, 0.08);
+  --hi-shadow-lg: 0 8px 40px rgba(64, 55, 53, 0.1);
+
+  /* 레이아웃 */
+  --hi-container: 1200px;
+  --hi-navbar-h: 64px;
+
+  /* 기본값 */
+  background: var(--hi-cream);
+  color: var(--hi-brown);
+  font-family: var(--hi-font-base);
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: -0.01em;
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* ============================================================
+ * 타이포그래피
+ * ============================================================ */
+.hi-app h1,
+.hi-app h2,
+.hi-app h3,
+.hi-app h4 {
+  color: var(--hi-brown);
+  font-weight: 600;
+  line-height: 1.3;
+  margin: 0;
+}
+
+.hi-serif {
+  font-family: var(--hi-font-serif);
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+.hi-eyebrow {
+  font-family: var(--hi-font-serif);
+  font-size: 14px;
+  font-style: italic;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--hi-pink);
+  margin-bottom: 12px;
+}
+
+.hi-section-title {
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.hi-section-subtitle {
+  font-size: 16px;
+  color: var(--hi-brown-60);
+  max-width: 560px;
+  line-height: 1.7;
+}
+
+/* ============================================================
+ * 레이아웃 컨테이너
+ * ============================================================ */
+.hi-container {
+  max-width: var(--hi-container);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.hi-section {
+  padding: 80px 0;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .hi-section {
+    padding: 56px 0;
+  }
+  .hi-container {
+    padding: 0 20px;
+  }
+}
+
+/* ============================================================
+ * GNB 네비게이션
+ * ============================================================ */
+.hi-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(255, 248, 239, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--hi-brown-10);
+}
+
+.hi-navbar-inner {
+  max-width: var(--hi-container);
+  margin: 0 auto;
+  padding: 0 24px;
+  height: var(--hi-navbar-h);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.hi-navbar-logo {
+  font-family: var(--hi-font-serif);
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  color: var(--hi-brown);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.hi-navbar-logo .hi-logo-dot {
+  color: var(--hi-pink);
+}
+
+.hi-navbar-menu {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hi-navbar-menu a {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--hi-brown);
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  transition: color 0.2s;
+  position: relative;
+  padding: 4px 0;
+}
+
+.hi-navbar-menu a:hover {
+  color: var(--hi-pink);
+}
+
+.hi-navbar-menu a.hi-active {
+  color: var(--hi-pink);
+}
+
+.hi-navbar-menu a.hi-active::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--hi-pink);
+  border-radius: 2px;
+}
+
+/* 드롭다운 (SHOP) */
+.hi-dropdown {
+  position: relative;
+}
+
+.hi-dropdown-menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--hi-cream);
+  border: 1px solid var(--hi-brown-10);
+  border-radius: var(--hi-radius-md);
+  box-shadow: var(--hi-shadow-md);
+  padding: 12px;
+  min-width: 200px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-50%) translateY(-4px);
+  transition: all 0.2s;
+  list-style: none;
+  margin: 0;
+}
+
+.hi-dropdown:hover .hi-dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+.hi-dropdown-menu a {
+  display: block;
+  padding: 8px 14px;
+  border-radius: var(--hi-radius-sm);
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.hi-dropdown-menu a:hover {
+  background: var(--hi-milk-pink);
+  color: var(--hi-brown);
+}
+
+/* CTA 버튼 */
+.hi-cta-nav {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--hi-pink);
+  color: var(--hi-cream);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 9px 18px;
+  border-radius: var(--hi-radius-pill);
+  text-decoration: none;
+  white-space: nowrap;
+  transition: transform 0.15s, box-shadow 0.2s;
+  box-shadow: 0 2px 12px rgba(246, 166, 184, 0.4);
+}
+
+.hi-cta-nav:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(246, 166, 184, 0.5);
+  color: var(--hi-cream);
+}
+
+/* 모바일 햄버거 */
+.hi-navbar-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  color: var(--hi-brown);
+}
+
+@media (max-width: 900px) {
+  .hi-navbar-menu {
+    display: none;
+  }
+  .hi-navbar-toggle {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .hi-navbar-toggle span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: var(--hi-brown);
+    border-radius: 2px;
+  }
+  .hi-cta-nav span.hi-cta-text {
+    display: none;
+  }
+}
+
+/* 모바일 메뉴 오버레이 */
+.hi-mobile-menu {
+  display: none;
+  position: fixed;
+  top: var(--hi-navbar-h);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--hi-cream);
+  z-index: 99;
+  padding: 24px;
+  flex-direction: column;
+  gap: 8px;
+  overflow-y: auto;
+}
+
+.hi-mobile-menu.hi-open {
+  display: flex;
+}
+
+.hi-mobile-menu a {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--hi-brown);
+  text-decoration: none;
+  padding: 14px 8px;
+  border-bottom: 1px solid var(--hi-brown-10);
+}
+
+.hi-mobile-menu a:hover {
+  color: var(--hi-pink);
+}
+
+/* ============================================================
+ * 버튼 시스템
+ * ============================================================ */
+.hi-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: var(--hi-font-base);
+  font-size: 15px;
+  font-weight: 600;
+  padding: 14px 28px;
+  border-radius: var(--hi-radius-pill);
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.hi-btn-primary {
+  background: var(--hi-pink);
+  color: var(--hi-cream);
+  box-shadow: 0 4px 16px rgba(246, 166, 184, 0.35);
+}
+
+.hi-btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(246, 166, 184, 0.45);
+  color: var(--hi-cream);
+}
+
+.hi-btn-secondary {
+  background: transparent;
+  color: var(--hi-brown);
+  border: 1.5px solid var(--hi-brown-20);
+}
+
+.hi-btn-secondary:hover {
+  border-color: var(--hi-brown);
+  background: var(--hi-milk-pink);
+  color: var(--hi-brown);
+}
+
+.hi-btn-green {
+  background: var(--hi-green);
+  color: var(--hi-cream);
+}
+
+.hi-btn-green:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(111, 148, 112, 0.35);
+  color: var(--hi-cream);
+}
+
+.hi-btn-lg {
+  font-size: 16px;
+  padding: 16px 36px;
+}
+
+/* ============================================================
+ * HERO 섹션 (01)
+ * ============================================================ */
+.hi-hero {
+  padding: 80px 0 64px;
+  text-align: center;
+  background: linear-gradient(180deg, var(--hi-cream) 0%, var(--hi-milk-pink) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.hi-hero-eyebrow {
+  font-family: var(--hi-font-serif);
+  font-size: 14px;
+  font-style: italic;
+  letter-spacing: 0.2em;
+  color: var(--hi-pink);
+  margin-bottom: 20px;
+}
+
+.hi-hero-title {
+  font-size: clamp(36px, 6vw, 64px);
+  font-weight: 700;
+  line-height: 1.15;
+  margin-bottom: 20px;
+  color: var(--hi-brown);
+}
+
+.hi-hero-subtitle {
+  font-size: clamp(16px, 2vw, 20px);
+  color: var(--hi-brown-60);
+  margin-bottom: 16px;
+  font-weight: 400;
+}
+
+.hi-hero-brand {
+  font-family: var(--hi-font-serif);
+  font-size: 15px;
+  letter-spacing: 0.15em;
+  color: var(--hi-sage);
+  margin-bottom: 40px;
+}
+
+.hi-hero-cta {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+}
+
+/* 표정 비누 일러스트 영역 */
+.hi-soap-row {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  padding: 0 16px;
+}
+
+.hi-soap {
+  width: 140px;
+  height: 100px;
+  background: linear-gradient(135deg, #FFF8EF 0%, #FCE8EC 100%);
+  border-radius: 20px;
+  box-shadow: var(--hi-shadow-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  position: relative;
+  transition: transform 0.3s;
+}
+
+.hi-soap:hover {
+  transform: translateY(-6px) rotate(-2deg);
+}
+
+.hi-soap:nth-child(2):hover { transform: translateY(-6px) rotate(2deg); }
+.hi-soap:nth-child(3):hover { transform: translateY(-6px) rotate(-1deg); }
+
+/* ============================================================
+ * 섹션 공통 — 번호·헤더
+ * ============================================================ */
+.hi-section-num {
+  font-family: var(--hi-font-serif);
+  font-size: 14px;
+  font-style: italic;
+  color: var(--hi-pink);
+  letter-spacing: 0.2em;
+  margin-bottom: 8px;
+}
+
+.hi-section-header {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.hi-section-header.hi-left {
+  text-align: left;
+}
+
+/* ============================================================
+ * PROBLEM 섹션 (02)
+ * ============================================================ */
+.hi-problem-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .hi-problem-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.hi-problem-card {
+  background: #fff;
+  border-radius: var(--hi-radius-md);
+  padding: 32px 20px;
+  text-align: center;
+  box-shadow: var(--hi-shadow-sm);
+}
+
+.hi-problem-icon {
+  font-size: 36px;
+  margin-bottom: 14px;
+}
+
+.hi-problem-card h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.hi-problem-card p {
+  font-size: 13px;
+  color: var(--hi-brown-60);
+  margin: 0;
+}
+
+.hi-problem-closing {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--hi-brown);
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.7;
+}
+
+/* ============================================================
+ * FACE 카드 (03, 04)
+ * ============================================================ */
+.hi-face-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .hi-face-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.hi-face-card {
+  background: #fff;
+  border-radius: var(--hi-radius-md);
+  padding: 28px 12px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.25s;
+  border: 2px solid transparent;
+  box-shadow: var(--hi-shadow-sm);
+}
+
+.hi-face-card:hover,
+.hi-face-card.hi-selected {
+  border-color: var(--hi-pink);
+  transform: translateY(-4px);
+  box-shadow: var(--hi-shadow-md);
+}
+
+.hi-face-emoji {
+  font-size: 40px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.hi-face-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--hi-brown);
+}
+
+.hi-face-desc {
+  font-size: 12px;
+  color: var(--hi-brown-60);
+  margin-top: 4px;
+}
+
+/* ============================================================
+ * BATH SYSTEM (05)
+ * ============================================================ */
+.hi-system-flow {
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.hi-system-step {
+  flex: 1;
+  min-width: 160px;
+  text-align: center;
+  padding: 32px 16px;
+  position: relative;
+}
+
+.hi-system-step-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  margin: 0 auto 16px;
+  background: #fff;
+  box-shadow: var(--hi-shadow-sm);
+}
+
+.hi-system-step:nth-child(1) .hi-system-step-icon { background: var(--hi-milk-pink); }
+.hi-system-step:nth-child(3) .hi-system-step-icon { background: var(--hi-sage-soft); }
+.hi-system-step:nth-child(5) .hi-system-step-icon { background: rgba(244, 178, 125, 0.2); }
+
+.hi-system-step-label {
+  font-family: var(--hi-font-serif);
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  color: var(--hi-pink);
+  margin-bottom: 6px;
+}
+
+.hi-system-step h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.hi-system-step p {
+  font-size: 13px;
+  color: var(--hi-brown-60);
+  margin: 0;
+  line-height: 1.6;
+}
+
+.hi-system-arrow {
+  display: flex;
+  align-items: center;
+  color: var(--hi-brown-20);
+  font-size: 20px;
+  padding: 0 4px;
+}
+
+@media (max-width: 768px) {
+  .hi-system-flow {
+    flex-direction: column;
+  }
+  .hi-system-arrow {
+    transform: rotate(90deg);
+    padding: 8px 0;
+  }
+}
+
+/* ============================================================
+ * FAMILY (06)
+ * ============================================================ */
+.hi-family-row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.hi-family-member {
+  text-align: center;
+}
+
+.hi-family-soap {
+  background: linear-gradient(135deg, #FFF8EF 0%, #FCE8EC 100%);
+  border-radius: 20px;
+  box-shadow: var(--hi-shadow-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+}
+
+.hi-family-soap.hi-lg { width: 180px; height: 130px; font-size: 52px; }
+.hi-family-soap.hi-md { width: 140px; height: 100px; font-size: 40px; }
+.hi-family-soap.hi-sm { width: 100px; height: 72px; font-size: 28px; }
+
+.hi-family-role {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--hi-brown);
+  margin-bottom: 4px;
+}
+
+.hi-family-desc {
+  font-size: 13px;
+  color: var(--hi-brown-60);
+}
+
+/* ============================================================
+ * MOOD 제품 선택 (07)
+ * ============================================================ */
+.hi-mood-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .hi-mood-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.hi-mood-card {
+  border-radius: var(--hi-radius-md);
+  padding: 32px 24px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.25s, box-shadow 0.25s;
+  box-shadow: var(--hi-shadow-sm);
+}
+
+.hi-mood-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--hi-shadow-md);
+}
+
+.hi-mood-card.hi-rest { background: var(--hi-sage-soft); }
+.hi-mood-card.hi-fresh { background: rgba(244, 178, 125, 0.18); }
+.hi-mood-card.hi-soft { background: var(--hi-milk-pink); }
+.hi-mood-card.hi-clean { background: rgba(111, 148, 112, 0.15); }
+
+.hi-mood-label {
+  font-family: var(--hi-font-serif);
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  margin-bottom: 8px;
+}
+
+.hi-mood-card.hi-rest .hi-mood-label { color: var(--hi-green); }
+.hi-mood-card.hi-fresh .hi-mood-label { color: #d88443; }
+.hi-mood-card.hi-soft .hi-mood-label { color: var(--hi-pink); }
+.hi-mood-card.hi-clean .hi-mood-label { color: var(--hi-green); }
+
+.hi-mood-card h4 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.hi-mood-card p {
+  font-size: 13px;
+  color: var(--hi-brown-60);
+  margin: 0;
+}
+
+/* ============================================================
+ * TRAVEL & SWIM (08)
+ * ============================================================ */
+.hi-tab-row {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.hi-tab {
+  background: transparent;
+  border: 1.5px solid var(--hi-brown-20);
+  color: var(--hi-brown-60);
+  font-family: var(--hi-font-base);
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 24px;
+  border-radius: var(--hi-radius-pill);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.hi-tab:hover {
+  border-color: var(--hi-brown-40);
+  color: var(--hi-brown);
+}
+
+.hi-tab.hi-active {
+  background: var(--hi-brown);
+  border-color: var(--hi-brown);
+  color: var(--hi-cream);
+}
+
+.hi-tab-panel {
+  display: none;
+}
+
+.hi-tab-panel.hi-active {
+  display: block;
+  animation: hi-fade 0.3s ease;
+}
+
+@keyframes hi-fade {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.hi-product-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .hi-product-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.hi-product-list li {
+  background: #fff;
+  border-radius: var(--hi-radius-md);
+  padding: 20px 16px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  box-shadow: var(--hi-shadow-sm);
+}
+
+.hi-product-list li .hi-icon {
+  font-size: 28px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* ============================================================
+ * REFILL (09)
+ * ============================================================ */
+.hi-refill-flow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+}
+
+.hi-refill-step {
+  background: #fff;
+  border-radius: var(--hi-radius-pill);
+  padding: 14px 28px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--hi-brown);
+  box-shadow: var(--hi-shadow-sm);
+}
+
+.hi-refill-arrow {
+  color: var(--hi-green);
+  font-size: 20px;
+}
+
+/* ============================================================
+ * INGREDIENT & MATERIAL (10)
+ * ============================================================ */
+.hi-ingredient-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+@media (max-width: 768px) {
+  .hi-ingredient-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.hi-ingredient-col {
+  background: #fff;
+  border-radius: var(--hi-radius-lg);
+  padding: 40px 32px;
+  box-shadow: var(--hi-shadow-sm);
+}
+
+.hi-ingredient-col h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.hi-ingredient-col .hi-eyebrow {
+  margin-bottom: 4px;
+}
+
+.hi-tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.hi-tag {
+  display: inline-block;
+  padding: 6px 14px;
+  background: var(--hi-sage-soft);
+  color: var(--hi-green);
+  border-radius: var(--hi-radius-pill);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.hi-tag.hi-material {
+  background: var(--hi-milk-pink);
+  color: var(--hi-pink);
+}
+
+/* ============================================================
+ * FIND MY FRIEND 퀴즈 (11)
+ * ============================================================ */
+.hi-quiz-inline {
+  background: linear-gradient(135deg, var(--hi-milk-pink) 0%, var(--hi-sage-soft) 100%);
+  border-radius: var(--hi-radius-lg);
+  padding: 56px 40px;
+  text-align: center;
+}
+
+.hi-quiz-preview {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  max-width: 720px;
+  margin: 32px auto;
+}
+
+@media (max-width: 768px) {
+  .hi-quiz-preview {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.hi-quiz-q {
+  background: #fff;
+  border-radius: var(--hi-radius-md);
+  padding: 20px 12px;
+}
+
+.hi-quiz-q-num {
+  font-family: var(--hi-font-serif);
+  font-size: 12px;
+  color: var(--hi-pink);
+  letter-spacing: 0.2em;
+  margin-bottom: 8px;
+}
+
+.hi-quiz-q-text {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--hi-brown);
+}
+
+/* ============================================================
+ * BRAND STORY (12)
+ * ============================================================ */
+.hi-story-closing {
+  background: var(--hi-brown);
+  color: var(--hi-cream);
+  border-radius: var(--hi-radius-lg);
+  padding: 72px 40px;
+  text-align: center;
+}
+
+.hi-story-closing h2 {
+  color: var(--hi-cream);
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 600;
+  margin-bottom: 24px;
+  line-height: 1.4;
+}
+
+.hi-story-closing p {
+  color: rgba(255, 248, 239, 0.7);
+  font-size: 16px;
+  line-height: 1.8;
+  max-width: 560px;
+  margin: 0 auto 36px;
+}
+
+.hi-story-brand {
+  font-family: var(--hi-font-serif);
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  color: var(--hi-pink);
+  margin-top: 32px;
+}
+
+.hi-story-cta {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 36px;
+}
+
+/* ============================================================
+ * FOOTER
+ * ============================================================ */
+.hi-footer {
+  background: var(--hi-brown);
+  color: rgba(255, 248, 239, 0.7);
+  padding: 60px 0 32px;
+  margin-top: 0;
+}
+
+.hi-footer-inner {
+  max-width: var(--hi-container);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.hi-footer-top {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+  .hi-footer-top {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.hi-footer-brand {
+  font-family: var(--hi-font-serif);
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--hi-cream);
+  margin-bottom: 12px;
+  letter-spacing: 0.08em;
+}
+
+.hi-footer-tagline {
+  font-size: 14px;
+  line-height: 1.7;
+  max-width: 280px;
+}
+
+.hi-footer-col h5 {
+  color: var(--hi-cream);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.hi-footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hi-footer-col li {
+  margin-bottom: 10px;
+}
+
+.hi-footer-col a {
+  color: rgba(255, 248, 239, 0.7);
+  font-size: 14px;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.hi-footer-col a:hover {
+  color: var(--hi-pink);
+}
+
+.hi-footer-bottom {
+  border-top: 1px solid rgba(255, 248, 239, 0.15);
+  padding-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 12px;
+}
+
+.hi-footer-pillars {
+  display: flex;
+  gap: 16px;
+  font-family: var(--hi-font-serif);
+  font-style: italic;
+  letter-spacing: 0.1em;
+  font-size: 13px;
+}
+
+.hi-footer-pillars span {
+  color: var(--hi-pink);
+}
+
+/* ============================================================
+ * 고정 플로팅 CTA (모바일)
+ * ============================================================ */
+.hi-floating-cta {
+  display: none;
+  position: fixed;
+  bottom: 16px;
+  left: 16px;
+  right: 16px;
+  z-index: 90;
+}
+
+@media (max-width: 768px) {
+  .hi-floating-cta {
+    display: block;
+  }
+}
+
+.hi-floating-cta .hi-btn {
+  width: 100%;
+  box-shadow: 0 8px 28px rgba(246, 166, 184, 0.5);
+}
+
+/* ============================================================
+ * 제품 카드 (SHOP)
+ * ============================================================ */
+.hi-product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+@media (max-width: 900px) {
+  .hi-product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .hi-product-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ============================================================
+ * JOURNAL 카드 그리드 (반응형 오버라이드)
+ * 인라인 gridTemplateColumns 로 설정한 3열을 모바일에서 축소
+ * ============================================================ */
+.hi-journal-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 900px) {
+  .hi-journal-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .hi-journal-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.hi-product-card {
+  background: #fff;
+  border-radius: var(--hi-radius-md);
+  overflow: hidden;
+  box-shadow: var(--hi-shadow-sm);
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.hi-product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--hi-shadow-md);
+}
+
+.hi-product-img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 56px;
+}
+
+.hi-product-img.hi-rest { background: var(--hi-sage-soft); }
+.hi-product-img.hi-fresh { background: rgba(244, 178, 125, 0.18); }
+.hi-product-img.hi-soft { background: var(--hi-milk-pink); }
+.hi-product-img.hi-clean { background: rgba(111, 148, 112, 0.12); }
+
+.hi-product-info {
+  padding: 20px;
+}
+
+.hi-product-mood {
+  font-family: var(--hi-font-serif);
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  color: var(--hi-pink);
+  margin-bottom: 6px;
+}
+
+.hi-product-name {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.hi-product-desc {
+  font-size: 13px;
+  color: var(--hi-brown-60);
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.hi-product-price {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--hi-brown);
+}
+
+.hi-product-price .hi-currency {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* ============================================================
+ * SHOP BY (4가지 검색 경로)
+ * ============================================================ */
+.hi-shopby-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+/* ============================================================
+ * FAQ 아코디언
+ * ============================================================ */
+.hi-faq-category {
+  margin-bottom: 48px;
+}
+
+.hi-faq-category h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--hi-milk-pink);
+}
+
+.hi-faq-item {
+  border-bottom: 1px solid var(--hi-brown-10);
+  padding: 0;
+}
+
+.hi-faq-q {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--hi-brown);
+  width: 100%;
+  background: none;
+  border: none;
+  text-align: left;
+  font-family: inherit;
+}
+
+.hi-faq-q:hover {
+  color: var(--hi-pink);
+}
+
+.hi-faq-icon {
+  font-size: 20px;
+  color: var(--hi-pink);
+  transition: transform 0.2s;
+  flex-shrink: 0;
+  margin-left: 16px;
+}
+
+.hi-faq-item.hi-open .hi-faq-icon {
+  transform: rotate(45deg);
+}
+
+.hi-faq-a {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  font-size: 15px;
+  color: var(--hi-brown-60);
+  line-height: 1.8;
+}
+
+.hi-faq-item.hi-open .hi-faq-a {
+  max-height: 400px;
+  padding-bottom: 20px;
+}
+
+/* ============================================================
+ * 페이지 헤더 (서브 페이지)
+ * ============================================================ */
+.hi-page-header {
+  background: linear-gradient(180deg, var(--hi-milk-pink) 0%, var(--hi-cream) 100%);
+  padding: 60px 0 48px;
+  text-align: center;
+}
+
+.hi-page-header h1 {
+  font-size: clamp(32px, 5vw, 48px);
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.hi-page-header p {
+  font-size: 16px;
+  color: var(--hi-brown-60);
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+/* ============================================================
+ * 유틸리티
+ * ============================================================ */
+.hi-text-center { text-align: center; }
+.hi-mt-40 { margin-top: 40px; }
+.hi-mt-56 { margin-top: 56px; }
+.hi-mb-40 { margin-bottom: 40px; }
+.hi-hidden { display: none; }
+
+/* 구조화 데이터 숨김 */
+.hi-jsonld {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

@@ -55,7 +55,7 @@ const config: Config = {
         },
         blog: false,
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: ['./src/css/custom.css', './src/css/highskin.css'],
         },
       } satisfies Preset.Options,
     ],
@@ -96,6 +96,11 @@ const config: Config = {
           sidebarId: 'commonSidebar',
           position: 'left',
           label: '📚 공통 가이드',
+        },
+        {
+          to: '/highskin',
+          label: '🧴 HI-SKIN',
+          position: 'right',
         },
         {
           href: '/',
