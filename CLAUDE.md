@@ -26,6 +26,7 @@
 - **하이피부 픽커 퀴즈**: `docs/branding/highskin-picker-quiz.md` — 구매 홈페이지 설문(피부타입·향·눈코입 커스텀 4×3×4=48조합) → 추천 상품+쿠폰. 스모어 제작, 그래픽은 가이드 부록 B(G1부품시트/G2캐릭터4종/G3 UI데코)
 - **하이피부 채널·콘텐츠 전략**: `docs/marketing/highskin-channel-strategy.md` — Recap 7가지 → OEP 채널·주력(인스타)/보조(블로그)/전환(스토어) → 크로스채널 퍼널 → 콘텐츠 필러 40/25/20/15 → 4주 캘린더 → AI 워크플로우(GPT→클로드→노트북LM→나노바나)
 - **8/7 결과물 (3개 아이템)**: `docs/marketing/visual-branding-channel-results.md` — 비주얼 브랜딩 설계 5장 · 인스타 카드뉴스 · 2026 마케팅 이슈 캘린더 · 연·월 콘텐츠 캘린더를 하이피부/치마/원피스에 적용. 이미지는 가이드 부록 E 프롬프트로 생성
+- **타겟·카테고리·차별점**: `docs/marketing/target-category-differentiation.md` — 하이피부(온가족·리필)/치마(19~45세·상황×체형)/원피스(40·50대·사이즈프리) 비교표·포지셔닝
 - **8/7 강의 원본 이미지**: `static/img/class-0807/` — 비주얼 설계 5장·인스타 카드뉴스·이슈 캘린더 PDF·연월 캘린더 (문서에 갤러리로 표출, `#result-images` 앵커)
 - **표 데이터 CSV**: 캘린더·카드뉴스 등 표형 데이터는 `static/data/marketing-calendar/*.csv`(UTF-8 BOM)로 관리 → 문서는 CSV 링크로 참조. 생성/수정 시 동기화 필수
 - **2026 캘린더 운영형 확장**: 공휴일(`2026_holidays.csv`)·대형 이벤트(`2026_key_events.csv`)·월별 이슈(실제 날짜·캠페인·CTA·우선순위) — 외부 검증(위키백과 공휴일 법률·국제대회 일정) 완료. 수정 시 검증 일자 갱신

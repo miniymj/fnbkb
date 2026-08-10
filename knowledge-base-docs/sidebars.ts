@@ -165,6 +165,7 @@ const sidebars: SidebarsConfig = {
         'marketing/launch-playbook',
         'marketing/highskin-channel-strategy',
         'marketing/visual-branding-common',
+        'marketing/target-category-differentiation',
       ],
     },
     {
