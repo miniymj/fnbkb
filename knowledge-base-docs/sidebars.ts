@@ -163,6 +163,7 @@ const sidebars: SidebarsConfig = {
         'marketing/intro',
         'marketing/methodology',
         'marketing/launch-playbook',
+        'marketing/ai-performance-insights',
         'marketing/highskin-channel-strategy',
         'marketing/visual-branding-common',
         'marketing/target-category-differentiation',

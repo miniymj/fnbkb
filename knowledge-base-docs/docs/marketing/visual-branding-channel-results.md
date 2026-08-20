@@ -88,6 +88,17 @@ import CsvTable from '@site/src/components/CsvTable';
 ### 하이피부 4주 콘텐츠 캘린더
 <CsvTable src="/data/marketing-calendar/4week_content_highskin.csv" caption="🗓 하이피부 4주 콘텐츠 캘린더" />
 
+### 📶 광고 운영 모드 — Always-On + 시즌 부스터 (ops_mode 컬럼)
+
+> 월별 이슈 캘린더에 **운영 모드(ops_mode)** 컬럼 추가 (2026-08-20) — Criteo GO Campaign의 하이브리드 운영 전략 베끼기. 배경: `ai-performance-insights.md` §4.4
+
+| 모드 | 대상 (priority) | 운영 | UTM 캠페인 예시 |
+|---|---|---|---|
+| **상시(Always-On)** | Mid · Low 달 | 소액 자동화 상시 운영 — 손대지 않고 인지 유지 | `2026-03_newterm_always-on` |
+| **부스터(Booster)** | High 달 (설 · 가정의달 · 여름휴가 · 추석 · 연말 등) | 예산 상향 + 수동 정밀 타겟팅 + 시즌 크리에이티브(월별 카드뉴스 E2c) | `2026-09_chuseok_booster` |
+
+> 시즌 종료 후 반드시 **베이스 예산으로 복귀** — 올린 채 방치가 지출 누수 1위. 실행 프로토콜: `launch-playbook.md` §4
+
 ---
 
 
@@ -115,7 +126,7 @@ import CsvTable from '@site/src/components/CsvTable';
 > **활용**: 위 무드보드의 시각 방향(크림 베이스·파스텔 그리드·아이 손그림 캐릭터)을 **P3 바디바 언박싱 패키지 디자인**에도 동일하게 적용 → `moodboard-prompt-guide.md` 부록 C P3 참고
 
 ## 1-② 인스타 채널 카드뉴스 (4장)
-> 📥 [카드뉴스 전체 데이터 CSV](/data/marketing-calendar/cardnews_all.csv) — 3개 아이템 12장
+> 📥 [카드뉴스 전체 데이터 CSV](/data/marketing-calendar/cardnews_all.csv) — 3개 아이템 12장 + 교육공통 1장(광고 트렌드 2026, `ai-performance-insights.md` 부록)
 - 구성: ①브랜딩(캐릭터 탄생) ②판매(리필 홀더 세트) ③정보(민감피부 성분) ④참여(픽커 퀴즈)
 
 ### 1-②-2 ChatGPT 생성 카드뉴스 결과물 (2026-08-10)
