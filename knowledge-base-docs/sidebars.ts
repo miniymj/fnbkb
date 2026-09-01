@@ -167,6 +167,7 @@ const sidebars: SidebarsConfig = {
         'marketing/highskin-channel-strategy',
         'marketing/visual-branding-common',
         'marketing/target-category-differentiation',
+        'marketing/live-commerce-plan',
       ],
     },
     {
