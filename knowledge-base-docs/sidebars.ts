@@ -243,6 +243,7 @@ const sidebars: SidebarsConfig = {
         'notion/day-19',
         'notion/day-20',
         'notion/day-21',
+        'notion/day-22',
       ],
     },
   ],
