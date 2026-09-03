@@ -219,6 +219,11 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
+      label: '🧰 프로그램 관련 정리',
+      items: ['development/course-programs-reference'],
+    },
+    {
+      type: 'category',
       label: '📓 노션 과정 필기',
       items: [
         'notion/index',
